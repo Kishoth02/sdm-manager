@@ -1,0 +1,13 @@
+FROM ./mcq-topic-final.gguf
+PARAMETER temperature 0
+PARAMETER num_predict 10
+PARAMETER repeat_penalty 1.3
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|endoftext|>"
+
+TEMPLATE """<|im_start|>system
+You are a topic classifier for MCQ questions. Given a question and options, reply with ONLY the topic name. No explanation. No punctuation. Just the topic word.<|im_end|>
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+"""
