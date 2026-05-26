@@ -1,16 +1,42 @@
 import json5
 import json
 import re
-import requests
+import os
+from groq import Groq
 
-OLLAMA_URL = "http://localhost:11434/api/chat"
-MODEL_NAME = "sdm-intent"
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+MODEL_NAME = "llama-3.3-70b-versatile"
 
-SYSTEM_PROMPT = (
-    "You are an SDM intent detection model. Analyze the user message and return only a JSON response "
-    "with intent, target, group, question, linked_operations, validation, confidence, fallback, "
-    "next_action, and message fields."
-)
+SYSTEM_PROMPT = """You are an SDM intent detection model. Analyze the user message and return ONLY a JSON response with these fields: intent, target, group, question, linked_operations, validation, confidence, fallback, next_action, and message.
+
+Intent types you must detect:
+- show_questions: user wants to see/list/get questions
+- add_question: user wants to add a new question
+- edit_question: user wants to edit/update/fix a question
+- delete_question: user wants to delete/remove a question
+- add_option: user wants to add an option to a question
+- edit_option: user wants to edit an option
+- delete_option: user wants to delete an option
+- edit_group: user wants to edit/rename a group
+- delete_group: user wants to delete a group
+- show_groups: user wants to see groups
+- topics: user wants to see topics
+- upload: user wants to upload a file
+- convert: user wants to convert a file
+- unknown: cannot determine intent
+
+Examples:
+Input: "show questions in Group 4"
+Output: {"intent": "show_questions", "target": "question", "group": {"name": "Group 4"}, "question": null, "questionNum": null, "linked_operations": [], "validation": {}, "confidence": 0.95, "fallback": false, "next_action": "show_questions", "message": "Here are the questions in Group 4."}
+
+Input: "delete Q7 from Group 3"
+Output: {"intent": "delete_question", "target": "question", "group": {"name": "Group 3"}, "question": "Q7", "questionNum": 7, "linked_operations": [], "validation": {}, "confidence": 0.95, "fallback": false, "next_action": "delete_question", "message": "Deleting Q7 from Group 3."}
+
+Input: "add option B as Steel to Q5 in Group 2"
+Output: {"intent": "add_option", "target": "option", "group": {"name": "Group 2"}, "question": {"num": 5}, "questionNum": 5, "newValue": "Steel", "optionKey": "B", "linked_operations": [], "validation": {}, "confidence": 0.95, "fallback": false, "next_action": "save_add_option", "message": "Adding Steel as option B to Q5 in Group 2."}
+
+Return ONLY the JSON object. No explanation, no markdown, no extra text."""
+
 
 def _resolve_option_intent(result, group_str, is_replace=False):
     return {
@@ -23,8 +49,8 @@ def _resolve_option_intent(result, group_str, is_replace=False):
         "group": {"name": group_str} if group_str else None,
     }
 
+
 def _parse_raw(raw: str) -> dict:
-    """Clean and parse raw model output into a dict."""
     cleaned = raw.strip().rstrip('.').strip()
     match = re.search(r'\{.*\}', cleaned, re.DOTALL)
     if match:
@@ -34,10 +60,11 @@ def _parse_raw(raw: str) -> dict:
     except Exception:
         return json.loads(cleaned)
 
+
 def get_intent(message: str) -> dict:
     msg_lower = message.lower().strip()
 
-    # ── Keyword overrides BEFORE model call ───────────────────────────────
+    # ── Keyword overrides BEFORE model call ──────────────────────────────
     SHOW_KEYWORDS = ("show all", "show questions", "list all", "list questions",
                      "how many", "all questions", "display questions", "show topics",
                      "list topics", "all topics", "show files", "list files",
@@ -55,33 +82,30 @@ def get_intent(message: str) -> dict:
         return {"type": "convert", "target": "file"}
     # ─────────────────────────────────────────────────────────────────────
 
-    # ── TEMPORARY: Ollama disabled for Azure deployment ───────────────────
-    # When ready, remove this block and uncomment the Ollama section below
-    return {
-        "type": "unknown",
-        "message": "AI model not connected yet. Coming soon!"
-    }
+    # ── GROQ API CALL ─────────────────────────────────────────────────────
+    try:
+        response = client.chat.completions.create(
+            model=MODEL_NAME,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": message},
+            ],
+            temperature=0.1,
+            max_tokens=500,
+        )
+        raw = response.choices[0].message.content.strip()
+        print(f"DEBUG RAW OUTPUT: {raw}")
+    except Exception as e:
+        print(f"Groq API error: {e}")
+        return {"type": "unknown", "message": "AI service unavailable"}
     # ─────────────────────────────────────────────────────────────────────
 
-    # ── OLLAMA CALL (disabled for now) ────────────────────────────────────
-    # payload = {
-    #     "model": MODEL_NAME,
-    #     "stream": False,
-    #     "messages": [
-    #         {"role": "system", "content": SYSTEM_PROMPT},
-    #         {"role": "user", "content": message},
-    #     ],
-    # }
-    # response = requests.post(OLLAMA_URL, json=payload)
-    # response.raise_for_status()
-    # raw = response.json()["message"]["content"].strip()
-    # print(f"DEBUG RAW OUTPUT: {raw}")
-    # try:
-    #     result = _parse_raw(raw)
-    # except Exception:
-    #     return {"type": "unknown", "raw": raw}
-    # print(f"DEBUG PARSED: {result}")
-    # ─────────────────────────────────────────────────────────────────────
+    try:
+        result = _parse_raw(raw)
+    except Exception:
+        return {"type": "unknown", "raw": raw}
+
+    print(f"DEBUG PARSED: {result}")
 
     intent = result.get("intent", "").lower().replace("-", "_")
     group_info = result.get("group") or {}
@@ -112,13 +136,10 @@ def get_intent(message: str) -> dict:
     if intent == "edit_question":
         opt_key = (result.get("optionKey") or "").upper()
         new_val = result.get("newValue") or result.get("newOptionText", "")
-
         if opt_key and new_val:
             return _resolve_option_intent(result, group_str, is_replace=True)
-
         qnum = result.get("questionNum") or question_oid
         text_val = result.get("text") or result.get("questionText")
-
         if text_val and qnum:
             return {
                 "type": "edit",
@@ -127,7 +148,6 @@ def get_intent(message: str) -> dict:
                 "newValue": text_val,
                 "group": {"name": group_str} if group_str else None,
             }
-
         return {
             "type": "edit",
             "target": "question",
@@ -138,10 +158,8 @@ def get_intent(message: str) -> dict:
     # ── ADD ───────────────────────────────────────────────────────────────
     if intent == "add":
         target = result.get("target", "question")
-
         if target == "option":
             return _resolve_option_intent(result, group_str, is_replace=False)
-
         return {
             "type": "add",
             "target": "question",
@@ -168,10 +186,8 @@ def get_intent(message: str) -> dict:
         target = result.get("target", "question")
         opt_key = (result.get("optionKey") or "").upper()
         new_val = result.get("newValue") or result.get("newOptionText", "")
-
         if target == "option" and opt_key and new_val:
             return _resolve_option_intent(result, group_str, is_replace=True)
-
         qnum = result.get("questionNum") or question_oid
         return {
             "type": "edit",
@@ -193,7 +209,6 @@ def get_intent(message: str) -> dict:
     # ── DELETE QUESTION ───────────────────────────────────────────────────
     if intent in ("delete_question", "delete"):
         target = result.get("target", "question")
-
         if target == "option":
             return {
                 "type": "delete",
@@ -202,7 +217,6 @@ def get_intent(message: str) -> dict:
                 "optionKey": (result.get("optionKey") or "").upper(),
                 "group": {"name": group_str} if group_str else None,
             }
-
         return {
             "type": "delete",
             "target": "question",
@@ -240,13 +254,9 @@ def get_intent(message: str) -> dict:
         }
 
     if intent == "show_groups":
-        return {
-            "type": "show",
-            "target": "groups",
-            "group": None,
-        }
+        return {"type": "show", "target": "groups", "group": None}
 
-    # ── TOPICS ───────────────────────────────────────────────────────────
+    # ── TOPICS ────────────────────────────────────────────────────────────
     if intent == "topics":
         return {"type": "topics", "target": "topics", "group": None}
 
@@ -256,6 +266,7 @@ def get_intent(message: str) -> dict:
         "raw_intent": intent,
         "result": result,
     }
+
 
 # Alias for backward compatibility
 detect_intent = get_intent
