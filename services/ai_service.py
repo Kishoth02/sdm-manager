@@ -97,7 +97,7 @@ def get_intent(message: str) -> dict:
         print(f"DEBUG RAW OUTPUT: {raw}")
     except Exception as e:
         print(f"Groq API error: {e}")
-        return {"type": "unknown", "message": "AI service unavailable"}
+        return {"type": "unknown", "message": f"Groq error: {str(e)}"}
     # ─────────────────────────────────────────────────────────────────────
 
     try:
