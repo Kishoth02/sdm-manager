@@ -12,6 +12,30 @@ from typing import Optional
 
 import httpx
 
+from azure.cosmos import CosmosClient
+
+COSMOS_URI = os.environ.get("COSMOS_URI")
+COSMOS_KEY = os.environ.get("COSMOS_KEY")
+DB_NAME = "mcq-manager"
+CONTAINER_NAME = "mcq-files"
+
+if COSMOS_URI and COSMOS_KEY:
+    try:
+        cosmos_client = CosmosClient(COSMOS_URI, COSMOS_KEY)
+        db = cosmos_client.create_database_if_not_exists(DB_NAME)
+        container = db.create_container_if_not_exists(
+            id=CONTAINER_NAME,
+            partition_key={"paths": ["/id"], "kind": "Hash"}
+        )
+        print("✅ CosmosDB connected!")
+    except Exception as e:
+        print(f"❌ CosmosDB connection error: {e}")
+        cosmos_client = None
+        container = None
+else:
+    cosmos_client = None
+    container = None
+
 GENERIC_FILENAMES = {"mcq", "questions", "test", "quiz", "file", "data", "sheet", "upload", "sample", "document", "untitled"}
 
 def _is_generic_filename(name: str) -> bool:
@@ -390,12 +414,21 @@ def _parse_block(block: str) -> dict:
     return raw
 
 
-# ── Disk helpers ─────────────────────────────────────────────────────────────
+# ── Disk + CosmosDB helpers ──────────────────────────────────────────────────
 
 def _write_library(fname: str):
+    # Save to local file
     path = os.path.join(LIBRARY_DIR, fname)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(_index[fname], f, indent=2, ensure_ascii=False)
+    # Save to CosmosDB
+    if container:
+        try:
+            doc = {**_index[fname], "id": fname}
+            container.upsert_item(doc)
+            print(f"✅ Saved to CosmosDB: {fname}")
+        except Exception as e:
+            print(f"❌ CosmosDB save error: {e}")
 
 
 def _write_original(fname: str):
@@ -473,16 +506,31 @@ def _save(fname: str):
 
 def startup():
     global _active
-    for fname in sorted(os.listdir(LIBRARY_DIR)):
-        if fname.endswith(".json"):
-            path = os.path.join(LIBRARY_DIR, fname)
-            try:
-                with open(path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                if "mcqs" in data:
-                    _index[fname] = data
-            except Exception:
-                pass
+    # Try loading from CosmosDB first
+    if container:
+        try:
+            items = list(container.read_all_items())
+            for item in items:
+                fname = item.get("id", "")
+                if fname.endswith(".json") and "mcqs" in item:
+                    _index[fname] = item
+            print(f"✅ Loaded {len(_index)} files from CosmosDB")
+        except Exception as e:
+            print(f"❌ CosmosDB load error: {e}")
+
+    # Fallback to local files if CosmosDB empty
+    if not _index:
+        for fname in sorted(os.listdir(LIBRARY_DIR)):
+            if fname.endswith(".json"):
+                path = os.path.join(LIBRARY_DIR, fname)
+                try:
+                    with open(path, "r", encoding="utf-8") as f:
+                        data = json.load(f)
+                    if "mcqs" in data:
+                        _index[fname] = data
+                except Exception:
+                    pass
+
     if _index and _active is None:
         _active = next(iter(_index))
 
@@ -582,6 +630,12 @@ def remove(filename: str) -> str:
     if filename not in _index:
         raise ValueError(f"File '{filename}' not found.")
     del _index[filename]
+    if container:
+        try:
+            container.delete_item(item=filename, partition_key=filename)
+            print(f"✅ Deleted from CosmosDB: {filename}")
+        except Exception as e:
+            print(f"❌ CosmosDB delete error: {e}")
     _active = next(iter(_index)) if _index else None
     return filename
 
@@ -920,6 +974,7 @@ def get_sdm_responses(filename: str) -> dict:
         return {}
     return _index[target].get("responses", {})
 
+
 def delete_sdm_response(filename: str, item_oid: str) -> dict:
     target = filename or _active
     if not target or target not in _index:
@@ -931,6 +986,7 @@ def delete_sdm_response(filename: str, item_oid: str) -> dict:
     _index[target]["responses"] = responses
     _save(target)
     return {"deleted": item_oid}
+
 
 def clear_sdm_responses(filename: str):
     target = filename or _active

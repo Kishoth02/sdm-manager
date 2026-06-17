@@ -1,0 +1,11 @@
+uploads/
+library/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.git
+.gitignore
+*.md
+node_modules/
+.vscode/

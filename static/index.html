@@ -3485,6 +3485,7 @@
         if (!isSkip) pendingEdit.changes.difficulty = text.trim();
         return buildEditPreview();
       }
+
       pendingEdit = null;
       return `<div style="color:var(--text2)">Edit cancelled.</div>`;
     }
