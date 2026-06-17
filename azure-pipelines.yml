@@ -11,7 +11,7 @@ variables:
   azureServiceConnectionId: 'b5d2fa17-62fb-4115-87da-30bc8ac815b1'
 
   # Web app name
-  webAppName: 'sdm-manager'
+  webAppName: 'kishoth-sdm-manager'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
