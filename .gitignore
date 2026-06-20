@@ -133,3 +133,15 @@ __blobstorage__
 __queuestorage__
 __azurite_db*__.json
 .python_packages
+
+# Project specific
+*.gguf
+app.zip
+uploads/
+chats/
+library/
+history/
+convert_history/
+users.db
+*.db
+.vscode/
