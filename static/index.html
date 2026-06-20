@@ -1920,10 +1920,18 @@
     }
 
     window.onload = async () => {
-      currentUser = { name: 'User', username: 'guest' };
-      localStorage.setItem('mcq_user', JSON.stringify(currentUser));
-      await loadHistory();
-      enterApp();
+      try {
+        const res = await fetch('/api/me');
+        if (!res.ok) {
+          window.location.href = '/login';
+          return;
+        }
+        currentUser = await res.json();
+        await loadHistory();
+        enterApp();
+      } catch (e) {
+        window.location.href = '/login';
+      }
     };
 
     function switchTab(tab) {
@@ -1966,7 +1974,7 @@
     }
 
     function showAuthErr(msg) { const el = document.getElementById('auth-err'); el.textContent = msg; el.style.display = 'block'; }
-    function doLogout() { if (!confirm('Logout?')) return; localStorage.removeItem('mcq_user'); location.reload(); }
+    function doLogout() { if (!confirm('Logout?')) return; window.location.href = '/logout'; }
 
     async function loadActiveFileChip() {
       try {
@@ -2575,6 +2583,7 @@
               const groups = {};
               allQs.forEach(q => {
                 const g = q.topic || 'General';
+                if (!g || g.trim().toLowerCase() === 'nan') return;
                 if (!groups[g]) groups[g] = 0;
                 groups[g]++;
               });
@@ -2659,8 +2668,10 @@
         const text = lastUserMsg.content;
         let intent;
         try {
-          const ir = await fetch(`${BACKEND}/api/intent`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: text }) });
+          const ir = await fetch(`${BACKEND}/api/intent`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: text, filename: activeWorkingFile }) });
           intent = ir.ok ? await ir.json() : { type: 'chat' };
+          if (!intent.type && intent.intent) intent.type = intent.intent;
+          if (intent.type === 'show_questions') intent.type = 'show';
         } catch { intent = { type: 'chat' }; }
         const tr = document.createElement('div'); tr.className = 'msg-row bot';
         tr.innerHTML = `<div class="msg-avatar">M</div><div class="msg-bubble"><div class="typing-dots"><span></span><span></span><span></span></div></div>`;
@@ -2670,7 +2681,8 @@
         switch (intent.type) {
           case 'stats': html = await handleStats(intent); break;
           case 'topics': html = await handleTopics(session, intent); break;
-          case 'mcqs': html = await handleShowMcqs(intent); break;
+          case 'show':
+          case 'mcqs': html = await handleShowMcqs(intent, text); break;
           case 'multiTopics': html = await handleMultiTopics(intent); break;
           case 'export': html = await handleExportIntent(intent); break;
           case 'files': html = await handleListFiles(intent); break;
@@ -2938,15 +2950,16 @@
         isStreaming = false; hideStopButton();
         return;
       }
+
       const hasMultipleFiles = (session?.uploadedFiles || []).length > 1;
       if (hasMultipleFiles && !activeWorkingFile) {
         const fileBtns = (session.uploadedFiles || []).map(f =>
           `<button class="suggestion-chip" onclick="selectWorkingFile('${f.name}')">${f.name}</button>`
         ).join('');
         addMessage('bot', '', `<div>
-          <div style="font-weight:600;font-size:13px;margin-bottom:8px">⚠️ Please select a file first!</div>
-          <div style="display:flex;flex-wrap:wrap;gap:6px">${fileBtns}</div>
-        </div>`);
+      <div style="font-weight:600;font-size:13px;margin-bottom:8px">⚠️ Please select a file first!</div>
+      <div style="display:flex;flex-wrap:wrap;gap:6px">${fileBtns}</div>
+    </div>`);
         isStreaming = false;
         return;
       }
@@ -2960,10 +2973,40 @@
 
       let intent;
       try {
-        const ir = await fetch(`${BACKEND}/api/intent`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: text }), signal: abortController.signal });
+        const ir = await fetch(`${BACKEND}/api/intent`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: text, filename: activeWorkingFile }),
+          signal: abortController.signal
+        });
         intent = ir.ok ? await ir.json() : { type: 'chat' };
-        // Normalize: model returns "intent" field, not "type"
+
+        // Normalize type field
         if (!intent.type && intent.intent) intent.type = intent.intent;
+
+        // Resolve group number to actual group name on the frontend
+        if (intent.group?.name) {
+          const groupMatch = intent.group.name.match(/^group\s*(\d+)$/i);
+          if (groupMatch && activeWorkingFile) {
+            try {
+              const gRes = await fetch(`${BACKEND}/api/mcqs?filename=${encodeURIComponent(activeWorkingFile)}&_t=${Date.now()}`);
+              const gData = await gRes.json();
+              const allQs = gData.mcqs || gData.questions || [];
+              const groupNames = [...new Set(allQs.map(q => q.topic).filter(Boolean))];
+              const idx = parseInt(groupMatch[1]) - 1;
+              if (idx >= 0 && idx < groupNames.length) {
+                intent.topic = groupNames[idx];
+              } else {
+                intent.topic = intent.group.name;
+              }
+            } catch {
+              intent.topic = intent.group.name;
+            }
+          } else {
+            intent.topic = intent.group.name;
+          }
+        }
+
         console.log('INTENT TYPE:', intent.type, JSON.stringify(intent));
       } catch { intent = { type: 'chat' }; }
 
@@ -2983,7 +3026,6 @@
             }
             break;
           case 'edit':
-            // Model sometimes returns edit_question for add option requests
             if (intent.target === 'question' && intent.text && intent.questionNum) {
               html = await addOptionToQuestion(intent.questionNum, intent.text);
             } else {
@@ -3171,6 +3213,7 @@
         const r = await fetch(`${BACKEND}/api/mcqs`); if (!r.ok) throw new Error();
         const data = await r.json();
         let questions = Array.isArray(data) ? data : (data.mcqs || data.questions || []);
+        questions = questions.filter(q => q.question && q.question.trim().toLowerCase() !== 'nan');
         const filtered = questions.filter(q => intent.topics.some(t => (q.topic || '').toLowerCase().includes(t.toLowerCase())));
         if (!filtered.length) return `<div style="color:var(--hard)">⚠️ No questions found for topics: <b>${intent.topics.join(', ')}</b></div>`;
         const counts = {}; intent.topics.forEach(t => { counts[t] = filtered.filter(q => (q.topic || '').toLowerCase().includes(t)).length; });
@@ -3576,6 +3619,7 @@
     }
 
     async function _doShowMcqs(intent) {
+      if (!intent.topic && intent.group?.name) intent.topic = intent.group.name;
       const currentSession = getActiveSession();
       if (!activeWorkingFile) activeWorkingFile = window._restoredFile || null;
       if (!activeWorkingFile) {
@@ -3635,8 +3679,22 @@
           window._practiceAllQuestions = questions;
           window._practiceFullList = questions;
           window._skipLoadResponses = true;
+
+          // If a specific group was requested, jump directly to it
+          if (intent.topic) {
+            const groups = [...new Set(questions.map(q => q.topic).filter(Boolean))];
+            const groupIndex = groups.findIndex(g => g.toLowerCase() === intent.topic.toLowerCase());
+            _formFlow = {
+              active: true,
+              groups,
+              currentIndex: groupIndex >= 0 ? groupIndex : 0,
+              answers: {}
+            };
+            return buildNormalView(questions, intent.topic);
+          }
+
           _formFlow = { active: false, groups: [], currentIndex: 0, answers: {} };
-          return buildNormalView(questions, intent.topic || null);
+          return buildNormalView(questions, null);
         }
         const cards = shown.map((q, i) => {
           let num;
@@ -3966,19 +4024,19 @@
         const optionKey = intent.optionKey ? `option_${intent.optionKey.toLowerCase()}` : null;
         const isReplace = intent.is_replace === true;
 
+        function isEmptyOpt(val) {
+          return !val || val.trim() === '' || val.trim().toLowerCase() === 'nan';
+        }
+
         let targetSlot;
         if (isReplace && optionKey) {
-          // Replace mode — always overwrite the specified slot
           targetSlot = optionKey;
-        } else if (optionKey && (!q[optionKey] || q[optionKey].trim() === '')) {
-          // Add mode — slot is empty, use it
+        } else if (optionKey && isEmptyOpt(q[optionKey])) {
           targetSlot = optionKey;
-        } else if (optionKey && q[optionKey] && q[optionKey].trim() !== '') {
-          // Add mode — slot already has value, find next empty slot
-          targetSlot = optKeys.find(k => !q[k] || q[k].trim() === '');
+        } else if (optionKey && !isEmptyOpt(q[optionKey])) {
+          targetSlot = optKeys.find(k => isEmptyOpt(q[k]));
         } else {
-          // No optionKey — find next empty slot
-          targetSlot = optKeys.find(k => !q[k] || q[k].trim() === '');
+          targetSlot = optKeys.find(k => isEmptyOpt(q[k]));
         }
 
         if (!targetSlot) {
@@ -4542,11 +4600,15 @@
     }
 
     function buildNormalCard(q, num) {
+      if (!q.question || q.question.trim().toLowerCase() === 'nan') return '';
       const ans = q.answer || '';
       const qId = (q.id || q._id || num).toString().replace(/[^a-zA-Z0-9_-]/g, '_');
       const dataType = (q.tags || '').toLowerCase();
       const itemOID = q.explanation || '';
-      const hasOptions = ['A', 'B', 'C', 'D'].some(k => q[`option_${k.toLowerCase()}`]);
+      const hasOptions = ['A', 'B', 'C', 'D'].some(k => {
+        const val = q[`option_${k.toLowerCase()}`];
+        return val && val.trim() !== '' && val.trim().toLowerCase() !== 'nan';
+      });
 
       let inputHtml = '';
 
@@ -4554,10 +4616,10 @@
         // CodeList question — show radio buttons
         const opts = ['A', 'B', 'C', 'D'].map(k => {
           const v = q[`option_${k.toLowerCase()}`] || '';
-          if (!v) return '';
+          if (!v || v.trim() === '' || v.trim().toLowerCase() === 'nan') return '';
           return `<div class="mcq-opt" style="cursor:pointer" onclick="selectSDMOption('${qId}', '${k}', this)">
-        <span class="opt-key">${k}</span>${v}
-      </div>`;
+    <span class="opt-key">${k}</span>${v}
+  </div>`;
         }).join('');
         inputHtml = `<div class="mcq-options" id="opts-${qId}">${opts}</div>`;
       } else if (dataType === 'integer' || dataType === 'float') {
@@ -4616,12 +4678,18 @@
       if (!activeTopic) {
         const groups = _getGroupsFromQuestions(questions);
         _formFlow = { active: true, groups, currentIndex: 0, answers: {} };
-      } else if (!_formFlow.active) {
+      } else {
         const groups = _getGroupsFromQuestions(questions);
-        _formFlow = { active: true, groups, currentIndex: 0, answers: {} };
+        const groupIndex = groups.findIndex(g => g.toLowerCase() === (activeTopic || '').toLowerCase());
+        _formFlow = {
+          active: true,
+          groups,
+          currentIndex: groupIndex >= 0 ? groupIndex : 0,
+          answers: {}
+        };
       }
 
-      const topics = [...new Set(questions.map(q => q.topic).filter(Boolean))];
+      const topics = [...new Set(questions.map(q => q.topic).filter(t => t && t.trim().toLowerCase() !== 'nan'))];
       const currentGroup = _formFlow.groups[_formFlow.currentIndex];
       const filtered = questions.filter(q =>
         (q.topic || '').toLowerCase().trim() === (activeTopic || currentGroup || '').toLowerCase().trim()
@@ -5029,7 +5097,7 @@
       const groups = [];
       questions.forEach(q => {
         const g = q.topic || 'General';
-        if (!seen.has(g)) { seen.add(g); groups.push(g); }
+        if (!seen.has(g) && g.trim().toLowerCase() !== 'nan') { seen.add(g); groups.push(g); }
       });
       return groups;
     }

@@ -1,5 +1,1631 @@
 [
   {
+    "filename": "commercial_trade_sdm_v2_sdm.json",
+    "originalName": "commercial_trade_sdm_v2.csv",
+    "groups": 3,
+    "questions": 46,
+    "convertedAt": "2026-06-18T10:16:04.332Z",
+    "sdm": {
+      "SDM": {
+        "Building": {
+          "TemplateVersion": [
+            {
+              "ItemGroupDef": [
+                {
+                  "OID": "IG.1",
+                  "Name": "Commercial Greenhouse",
+                  "Repeating": "No",
+                  "Description": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Commercial Greenhouse"
+                    }
+                  },
+                  "ItemRef": [
+                    {
+                      "ItemOID": "I.1",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.2",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.3",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.4",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.1"
+                    },
+                    {
+                      "ItemOID": "I.5",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.2"
+                    },
+                    {
+                      "ItemOID": "I.46",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.2"
+                    },
+                    {
+                      "ItemOID": "I.43",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.18"
+                    },
+                    {
+                      "ItemOID": "I.47",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.18"
+                    },
+                    {
+                      "ItemOID": "I.48",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.19"
+                    },
+                    {
+                      "ItemOID": "I.49",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.19"
+                    },
+                    {
+                      "ItemOID": "I.6",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.3"
+                    },
+                    {
+                      "ItemOID": "I.9",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.10",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.4"
+                    },
+                    {
+                      "ItemOID": "I.11",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.5"
+                    },
+                    {
+                      "ItemOID": "I.12",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.6"
+                    },
+                    {
+                      "ItemOID": "I.13",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.14",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.7"
+                    },
+                    {
+                      "ItemOID": "I.15",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.16",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.17",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.18",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.9"
+                    },
+                    {
+                      "ItemOID": "I.23",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.24",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.25",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.10"
+                    },
+                    {
+                      "ItemOID": "I.26",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.27",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.11"
+                    },
+                    {
+                      "ItemOID": "I.28",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.50",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.20"
+                    },
+                    {
+                      "ItemOID": "I.29",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.30",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.52",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.53",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.22"
+                    },
+                    {
+                      "ItemOID": "I.57",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.23"
+                    },
+                    {
+                      "ItemOID": "I.58",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.24"
+                    },
+                    {
+                      "ItemOID": "I.54",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.23"
+                    },
+                    {
+                      "ItemOID": "I.56",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.23"
+                    },
+                    {
+                      "ItemOID": "I.55",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.24"
+                    },
+                    {
+                      "ItemOID": "I.31",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.32",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.15"
+                    },
+                    {
+                      "ItemOID": "I.33",
+                      "Mandatory": "No"
+                    }
+                  ]
+                },
+                {
+                  "OID": "IG.2",
+                  "Name": "Door",
+                  "Repeating": "No",
+                  "Description": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Door"
+                    }
+                  },
+                  "ItemRef": [
+                    {
+                      "ItemOID": "I.19",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.20",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.8"
+                    },
+                    {
+                      "ItemOID": "I.21",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.14"
+                    },
+                    {
+                      "ItemOID": "I.22",
+                      "Mandatory": "No"
+                    }
+                  ]
+                },
+                {
+                  "OID": "IG.3",
+                  "Name": "Decoratives",
+                  "Repeating": "No",
+                  "Description": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Decoratives"
+                    }
+                  },
+                  "ItemRef": [
+                    {
+                      "ItemOID": "I.39",
+                      "Mandatory": "No"
+                    },
+                    {
+                      "ItemOID": "I.51",
+                      "Mandatory": "No",
+                      "CollectionExceptionConditionOID": "C.21"
+                    }
+                  ]
+                }
+              ],
+              "ItemDef": [
+                {
+                  "OID": "I.1",
+                  "Name": "I.1",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Specify the desired Width of the Greenhouse (max footprint)"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.2",
+                  "Name": "I.2",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Specify the desired Length of the Greenhouse (max footprint)"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.3",
+                  "Name": "I.3",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you have an Existing Foundation or do you want to build a New foundation?"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.3"
+                  }
+                },
+                {
+                  "OID": "I.4",
+                  "Name": "I.4",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Describe your Existing Foundation type?"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.4"
+                  }
+                },
+                {
+                  "OID": "I.5",
+                  "Name": "I.5",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the Width of the foundation in Feet and Inches"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.46",
+                  "Name": "I.46",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the Height of the foundation in Feet and Inches"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.43",
+                  "Name": "I.43",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the Height of the foundation in Feet and Inches"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.47",
+                  "Name": "I.47",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the Width of the foundation in Feet and Inches"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.48",
+                  "Name": "I.48",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the Height of the foundation in Feet and Inches"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.49",
+                  "Name": "I.49",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the Width of the foundation in Feet and Inches"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.6",
+                  "Name": "I.6",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter your Kneewall Height"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.9",
+                  "Name": "I.9",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Please specify your Greenhouse type"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.9"
+                  }
+                },
+                {
+                  "OID": "I.10",
+                  "Name": "I.10",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Specify the type of Building Attached setup"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.10"
+                  }
+                },
+                {
+                  "OID": "I.11",
+                  "Name": "I.11",
+                  "DataType": "boolean",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Is there a Maximum Height Limit?"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.12",
+                  "Name": "I.12",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "What is the Height limit in Feet and Inches?"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.13",
+                  "Name": "I.13",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "What kind of Roof pitch do you prefer?"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.13"
+                  }
+                },
+                {
+                  "OID": "I.14",
+                  "Name": "I.14",
+                  "DataType": "text",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Specify the Pitch"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.15",
+                  "Name": "I.15",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Choose the Glazing preference for your Greenhouse"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.15"
+                  }
+                },
+                {
+                  "OID": "I.16",
+                  "Name": "I.16",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Choose the Undergutter height"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.16"
+                  }
+                },
+                {
+                  "OID": "I.17",
+                  "Name": "I.17",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want doors for your Greenhouse?"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.17"
+                  }
+                },
+                {
+                  "OID": "I.18",
+                  "Name": "I.18",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the number of doors you want for your Greenhouse"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.23",
+                  "Name": "I.23",
+                  "DataType": "boolean",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want Windows in your Greenhouse?"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.24",
+                  "Name": "I.24",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want side vents in your Greenhouse?"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.24"
+                  }
+                },
+                {
+                  "OID": "I.25",
+                  "Name": "I.25",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the quantity required"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.26",
+                  "Name": "I.26",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want roof vents for your greenhouse?"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.26"
+                  }
+                },
+                {
+                  "OID": "I.27",
+                  "Name": "I.27",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the quantity required"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.28",
+                  "Name": "I.28",
+                  "DataType": "boolean",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want an Exhaust Fan Package for your Greenhouse(includes intake shutters & comes with single package)?"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.50",
+                  "Name": "I.50",
+                  "DataType": "multiselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Please select the components you want in the exhaust fan package"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.50"
+                  }
+                },
+                {
+                  "OID": "I.29",
+                  "Name": "I.29",
+                  "DataType": "boolean",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want additional Exhaust Fans?"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.30",
+                  "Name": "I.30",
+                  "DataType": "boolean",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want Internal Air Circulation?"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.52",
+                  "Name": "I.52",
+                  "DataType": "boolean",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want a shades system?"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.53",
+                  "Name": "I.53",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Choose the type of shade system you want for your Greenhouse"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.53"
+                  }
+                },
+                {
+                  "OID": "I.57",
+                  "Name": "I.57",
+                  "DataType": "boolean",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want heat retention?"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.58",
+                  "Name": "I.58",
+                  "DataType": "boolean",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want Thermostats or Environmental Control System?"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.54",
+                  "Name": "I.54",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Choose the style(s) of shade system you want for your Greenhouse?"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.54"
+                  }
+                },
+                {
+                  "OID": "I.56",
+                  "Name": "I.56",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the shade percentage"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.55",
+                  "Name": "I.55",
+                  "DataType": "boolean",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want the style of shade system?"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.31",
+                  "Name": "I.31",
+                  "DataType": "boolean",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want a Heater for your Greenhouse?"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.32",
+                  "Name": "I.32",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Choose the type of heaters you want for your Greenhouse"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.32"
+                  }
+                },
+                {
+                  "OID": "I.33",
+                  "Name": "I.33",
+                  "DataType": "multiselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Customizations"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.33"
+                  }
+                },
+                {
+                  "OID": "I.19",
+                  "Name": "I.19",
+                  "DataType": "multiselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the type of doors you want for your Greenhouse"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.19"
+                  }
+                },
+                {
+                  "OID": "I.20",
+                  "Name": "I.20",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Specify the type of Commercial Door you prefer"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.20"
+                  }
+                },
+                {
+                  "OID": "I.21",
+                  "Name": "I.21",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the custom size required"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.22",
+                  "Name": "I.22",
+                  "DataType": "singleselect",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Choose the location of the door"
+                    }
+                  },
+                  "CodeListRef": {
+                    "CodeListOID": "CL.22"
+                  }
+                },
+                {
+                  "OID": "I.39",
+                  "Name": "I.39",
+                  "DataType": "boolean",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Do you want Base Panels (Only applicable if you don't have Kneewalls)?"
+                    }
+                  },
+                  "CodeListRef": {}
+                },
+                {
+                  "OID": "I.51",
+                  "Name": "I.51",
+                  "DataType": "integer",
+                  "Question": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Enter the height"
+                    }
+                  },
+                  "CodeListRef": {}
+                }
+              ],
+              "CodeList": [
+                {
+                  "OID": "CL.3",
+                  "Name": "CL.3",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "I have an Existing Foundation"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "I want to build a New Foundation"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.4",
+                  "Name": "CL.4",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Concrete"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Block"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "3",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Wood"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.9",
+                  "Name": "CL.9",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Free Standing"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Building Attached"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.10",
+                  "Name": "CL.10",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Gable Attached"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Lean To"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "3",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Gable Attached Lean To"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "4",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Double Gable Attached Lean To"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.13",
+                  "Name": "CL.13",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Standard 6/12 Roof Pitch"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Custom Roof Pitch"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.15",
+                  "Name": "CL.15",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Twin Wall (6mm or 8mm)"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Triple Wall (8mm, 12mm or 16mm)"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "3",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Five Wall (16mm only)"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "4",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Seven Wall (22mm)"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.16",
+                  "Name": "CL.16",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "8 Feet"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "10 Feet"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "3",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "12 Feet"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.17",
+                  "Name": "CL.17",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Yes"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "No"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.24",
+                  "Name": "CL.24",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Yes"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "No"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.26",
+                  "Name": "CL.26",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Yes"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "No"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.50",
+                  "Name": "CL.50",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Wet wall"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Shutters"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.53",
+                  "Name": "CL.53",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Automated"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Manual"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.54",
+                  "Name": "CL.54",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Flat"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Sloped"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "3",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Slop-Flat-Slope"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.32",
+                  "Name": "CL.32",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Electric Heaters"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Gas Heaters"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.33",
+                  "Name": "CL.33",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Vestibules (Reverse Gable Entry)"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Bio secure package"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "3",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Decorative Cupolas"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "4",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Partition Walls"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.19",
+                  "Name": "CL.19",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Commercial Door"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Storm Door"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.20",
+                  "Name": "CL.20",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "ADA Hardware"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Window"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "3",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Standard Size (36\"x84\")"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "4",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Custom Size"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "OID": "CL.22",
+                  "Name": "CL.22",
+                  "DataType": "text",
+                  "CodeListItem": [
+                    {
+                      "CodedValue": "1",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Gable"
+                        }
+                      }
+                    },
+                    {
+                      "CodedValue": "2",
+                      "IsEnabled": "Yes",
+                      "Decode": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Sidewall"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "ConditionDef": [
+                {
+                  "OID": "C.1",
+                  "Name": "C.1",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.3 == \"1\")"
+                  }
+                },
+                {
+                  "OID": "C.2",
+                  "Name": "C.2",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.4 == \"1\")"
+                  }
+                },
+                {
+                  "OID": "C.18",
+                  "Name": "C.18",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.4 == \"3\")"
+                  }
+                },
+                {
+                  "OID": "C.19",
+                  "Name": "C.19",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.4 == \"2\")"
+                  }
+                },
+                {
+                  "OID": "C.3",
+                  "Name": "C.3",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.3 == \"1\")"
+                  }
+                },
+                {
+                  "OID": "C.4",
+                  "Name": "C.4",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.9 == \"2\")"
+                  }
+                },
+                {
+                  "OID": "C.5",
+                  "Name": "C.5",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.9 == \"2\")"
+                  }
+                },
+                {
+                  "OID": "C.6",
+                  "Name": "C.6",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.11 == \"Yes\")"
+                  }
+                },
+                {
+                  "OID": "C.7",
+                  "Name": "C.7",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.13 == \"2\")"
+                  }
+                },
+                {
+                  "OID": "C.9",
+                  "Name": "C.9",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.17 == \"1\")"
+                  }
+                },
+                {
+                  "OID": "C.10",
+                  "Name": "C.10",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.24 == \"1\")"
+                  }
+                },
+                {
+                  "OID": "C.11",
+                  "Name": "C.11",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.26 == \"1\")"
+                  }
+                },
+                {
+                  "OID": "C.20",
+                  "Name": "C.20",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.28 == \"Yes\")"
+                  }
+                },
+                {
+                  "OID": "C.22",
+                  "Name": "C.22",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.52 == \"Yes\")"
+                  }
+                },
+                {
+                  "OID": "C.23",
+                  "Name": "C.23",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.53 == \"1\")"
+                  }
+                },
+                {
+                  "OID": "C.24",
+                  "Name": "C.24",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.53 == \"2\")"
+                  }
+                },
+                {
+                  "OID": "C.15",
+                  "Name": "C.15",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.31 == \"Yes\")"
+                  }
+                },
+                {
+                  "OID": "C.8",
+                  "Name": "C.8",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.19 == \"1\")"
+                  }
+                },
+                {
+                  "OID": "C.14",
+                  "Name": "C.14",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.20 == \"4\")"
+                  }
+                },
+                {
+                  "OID": "C.21",
+                  "Name": "C.21",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.39 == \"Yes\")"
+                  }
+                },
+                {
+                  "OID": "C.17",
+                  "Name": "C.17",
+                  "FormalExpression": {
+                    "Context": "OpenClinica",
+                    "text": "!(I.24 == \"2\")"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
     "filename": "roofenhancement_sdm_v2__11__sdm.json",
     "originalName": "roofenhancement_sdm_v2__11_.csv",
     "groups": 7,

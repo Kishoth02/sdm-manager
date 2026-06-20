@@ -1,0 +1,33 @@
+name: Deploy to Azure
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Create zip
+        run: |
+          zip -r app.zip . \
+            --exclude "*.git*" \
+            --exclude ".venv/*" \
+            --exclude "__pycache__/*" \
+            --exclude "uploads/*" \
+            --exclude "chats/*" \
+            --exclude "history/*" \
+            --exclude "*.gguf" \
+            --exclude "app.zip"
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: sdm-manager-app
+          publish-profile: ${{ secrets.AZURE_PUBLISH_PASSWORD }}
+          package: app.zip

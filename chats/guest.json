@@ -1,5 +1,19 @@
 [
   {
+    "id": "chat_1781702133182",
+    "title": "New Chat",
+    "fileContext": null,
+    "uploadedFiles": [],
+    "activeWorkingFile": null,
+    "messages": [
+      {
+        "role": "bot",
+        "content": "",
+        "raw": "<div style=\"color:var(--hard)\">⚠️ Upload failed: No module named 'pandas'</div>"
+      }
+    ]
+  },
+  {
     "id": "chat_1779428427527",
     "title": "roofplate",
     "fileContext": null,

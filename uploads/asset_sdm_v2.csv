@@ -1,0 +1,23 @@
+item_oid,topic,question,data_type,mandatory,condition_oid,option_a,option_b,option_c,option_d
+I.1,Property Details,Enter your Property Name,text,Yes,,,,,
+I.2,Property Details,Area in square feet,integer,Yes,,,,,
+I.3,Property Details,Street Address,text,No,,,,,
+I.4,Property Details,City,text,Yes,,,,,
+I.5,Property Details,State,text,Yes,,,,,
+I.6,Property Details,Country,text,Yes,,,,,
+I.7,Property Details,Zip Code,integer,Yes,,,,,
+I.8,Building Information,How many stories is the structure?,integer,Yes,,,,,
+I.9,Building Information,Year Built?,integer,No,,,,,
+I.10,Building Information,Is this a historic building?,singleselect,No,,Yes,No,,
+I.11,Accessibility,Can this building be accessed with ladder?,singleselect,No,,Yes,No,,
+I.12,Accessibility,From which direction can this building be accessed?,multiselect,No,C.1,Front,Left,Right,Back
+I.22,Accessibility,Is a 40 foot ladder required?,singleselect,No,C.1,Yes,No,,
+I.13,Equipment & Setup,Can scaffolding be set up?,singleselect,No,,Yes,No,,
+I.14,Equipment & Setup,From which direction can scaffolding be set up?,multiselect,No,C.2,Front,Left,Right,Back
+I.15,Equipment & Setup,Can machinery access?,singleselect,No,,Yes,No,,
+I.16,Equipment & Setup,From which direction can machinery be setup?,multiselect,No,C.3,Front,Left,Right,Back
+I.17,Logistics & Restrictions,Are there any parking restrictions or permits required for the work crew?,singleselect,No,,Yes,No,,
+I.18,Logistics & Restrictions,Can heavy machinery be driven on your driveway?,singleselect,No,,Yes,No,,
+I.19,Logistics & Restrictions,Can a dumpster be placed next to the building being worked on?,singleselect,No,,Yes,No,,
+I.20,Logistics & Restrictions,What is the Wind exposure at the property location (MPH)?,integer,No,,,,,
+I.21,Logistics & Restrictions,Choose the type of Snow Load you expect.(From 32 pounds to 140),integer,No,,,,,

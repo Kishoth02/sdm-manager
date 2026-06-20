@@ -161,7 +161,29 @@ async def export_custom(payload: dict, fmt: str = "json"):
 async def get_intent(payload: dict):
     try:
         from services.ai_service import get_intent as ai_get_intent
-        result = ai_get_intent(payload.get("message", ""))
+        message = payload.get("message", "")
+        filename = payload.get("filename")
+
+        print(f"DEBUG FILENAME RECEIVED: {filename}")
+
+        available_groups = []
+        try:
+            mcqs = fm.query(filename=filename, limit=500)
+            # If filename gave nothing, try without filename (uses active file)
+            if not mcqs:
+                mcqs = fm.query(limit=500)
+            seen = []
+            for q in mcqs:
+                t = q.get("topic") or q.get("group", "")
+                if t and t not in seen:
+                    seen.append(t)
+            available_groups = seen
+        except Exception as e:
+            print(f"DEBUG GROUPS ERROR: {e}")
+            pass
+
+        print(f"DEBUG GROUPS: {available_groups}")
+        result = ai_get_intent(message, available_groups=available_groups)
         return result
     except Exception as e:
         print(f"Intent error: {e}")

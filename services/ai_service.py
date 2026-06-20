@@ -7,6 +7,16 @@ from groq import Groq
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 MODEL_NAME = "llama-3.3-70b-versatile"
 
+def _resolve_group_by_index(group_str: str, available_groups: list) -> str:
+    if not group_str or not available_groups:
+        return group_str
+    match = re.match(r'^group\s*(\d+)$', group_str.strip().lower())
+    if match:
+        idx = int(match.group(1)) - 1
+        if 0 <= idx < len(available_groups):
+            return available_groups[idx]
+    return group_str
+
 SYSTEM_PROMPT = """You are an SDM intent detection model. Analyze the user message and return ONLY a JSON response with these fields: intent, target, group, question, linked_operations, validation, confidence, fallback, next_action, and message.
 
 Intent types you must detect:
@@ -61,7 +71,7 @@ def _parse_raw(raw: str) -> dict:
         return json.loads(cleaned)
 
 
-def get_intent(message: str) -> dict:
+def get_intent(message: str, available_groups: list = None) -> dict:
     msg_lower = message.lower().strip()
 
     # ── Keyword overrides BEFORE model call ──────────────────────────────
@@ -69,7 +79,12 @@ def get_intent(message: str) -> dict:
                      "how many", "all questions", "display questions", "show topics",
                      "list topics", "all topics", "show files", "list files",
                      "list out", "show all questions")
-    if any(kw in msg_lower for kw in SHOW_KEYWORDS):
+
+    # Skip keyword override if message mentions a specific group number or group name
+    has_group_ref = bool(re.search(r'group\s*\d+', msg_lower)) or \
+                    any(g.lower() in msg_lower for g in (available_groups or []))
+
+    if any(kw in msg_lower for kw in SHOW_KEYWORDS) and not has_group_ref:
         if "topic" in msg_lower:
             return {"type": "topics", "target": "topics", "group": None}
         if "file" in msg_lower:
@@ -110,6 +125,9 @@ def get_intent(message: str) -> dict:
     intent = result.get("intent", "").lower().replace("-", "_")
     group_info = result.get("group") or {}
     group_str = group_info.get("name", "") if isinstance(group_info, dict) else str(group_info)
+    print(f"DEBUG BEFORE RESOLVE: group_str={group_str}, available_groups={available_groups}")
+    group_str = _resolve_group_by_index(group_str, available_groups or [])
+    print(f"DEBUG AFTER RESOLVE: {group_str}")
     question_info = result.get("question") or {}
     question_oid = (
         question_info.get("num") if isinstance(question_info, dict)

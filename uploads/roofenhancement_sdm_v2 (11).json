@@ -1,0 +1,3200 @@
+{
+  "SDM": {
+    "Building": {
+      "GlobalVariables": {
+        "Name": "Roof Max Trade",
+        "Description": "",
+        "ProtocolName": "Roof Max Trade"
+      },
+      "TemplateVersion": [
+        {
+          "Protocol": {
+            "EventRef": [
+              {
+                "EventOID": "E.1",
+                "Mandatory": "No"
+              }
+            ]
+          },
+          "Images": [
+            {
+              "baseUrl": "https://stgpublicncusprod.blob.core.windows.net/images/roofing/roofenhancement/"
+            }
+          ],
+          "EventDef": [
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Bid"
+                }
+              },
+              "FormRef": [
+                {
+                  "FormOID": "F.1",
+                  "Mandatory": "No"
+                }
+              ],
+              "OID": "E.1",
+              "Name": "E.1",
+              "Repeating": "No",
+              "Type": "Common"
+            }
+          ],
+          "FormDef": [
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Trade Questions"
+                }
+              },
+              "ItemGroupRef": [
+                {
+                  "ItemGroupOID": "IG.1",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemGroupOID": "IG.2",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemGroupOID": "IG.3",
+                  "Mandatory": "No",
+                  "MethodOID": "M.1",
+                  "SummarizeInstances": "Yes"
+                },
+                {
+                  "ItemGroupOID": "IG.4",
+                  "Mandatory": "No",
+                  "MethodOID": "M.2"
+                },
+                {
+                  "ItemGroupOID": "IG.5",
+                  "Mandatory": "No",
+                  "MethodOID": "M.3"
+                },
+                {
+                  "ItemGroupOID": "IG.6",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemGroupOID": "IG.7",
+                  "Mandatory": "No"
+                }
+              ],
+              "OID": "F.1",
+              "Name": "F.1",
+              "Repeating": "No"
+            }
+          ],
+          "ItemGroupDef": [
+            {
+              "OID": "IG.1",
+              "ItemRef": [
+                {
+                  "ItemOID": "I.1",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.2",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.1"
+                },
+                {
+                  "ItemOID": "I.5",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.7",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.8",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.4"
+                },
+                {
+                  "ItemOID": "I.10",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.6"
+                },
+                {
+                  "ItemOID": "I.11",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.7"
+                },
+                {
+                  "ItemOID": "I.12",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.8"
+                },
+                {
+                  "ItemOID": "I.13",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.9"
+                },
+                {
+                  "ItemOID": "I.14",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.10"
+                },
+                {
+                  "ItemOID": "I.15",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.11"
+                },
+                {
+                  "ItemOID": "I.16",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.12"
+                },
+                {
+                  "ItemOID": "I.17",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.13"
+                },
+                {
+                  "ItemOID": "I.18",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.14"
+                },
+                {
+                  "ItemOID": "I.50",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.26"
+                },
+                {
+                  "ItemOID": "I.65",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.32"
+                },
+                {
+                  "ItemOID": "I.66",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.33"
+                },
+                {
+                  "ItemOID": "I.19",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.15"
+                },
+                {
+                  "ItemOID": "I.20",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.16"
+                }
+              ],
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Roof Condition Testing"
+                }
+              },
+              "Name": "IG.1",
+              "Repeating": "No"
+            },
+            {
+              "OID": "IG.2",
+              "ItemRef": [
+                {
+                  "ItemOID": "I.21",
+                  "Mandatory": "No"
+                }
+              ],
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Roof Facets & Area"
+                }
+              },
+              "Name": "IG.2",
+              "Repeating": "No"
+            },
+            {
+              "OID": "IG.3",
+              "ItemRef": [
+                {
+                  "ItemOID": "I.32",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.33",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.34",
+                  "Mandatory": "No",
+                  "MethodOID": "M.8"
+                },
+                {
+                  "ItemOID": "I.46",
+                  "Mandatory": "No",
+                  "ShowOn": "Normal"
+                },
+                {
+                  "ItemOID": "I.47",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.39",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.43",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.41",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.42",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.40",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.57",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.58",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.59",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.60",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.56",
+                  "Mandatory": "No",
+                  "ShowOn": "Summarize"
+                },
+                {
+                  "ItemOID": "I.6",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.35",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.37",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.38",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.55",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.23"
+                },
+                {
+                  "ItemOID": "I.28",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.23"
+                },
+                {
+                  "ItemOID": "I.51",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.52",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.24"
+                },
+                {
+                  "ItemOID": "I.53",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.54",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.25"
+                }
+              ],
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Roof Facet"
+                }
+              },
+              "Name": "IG.3",
+              "Repeating": "Yes"
+            },
+            {
+              "OID": "IG.4",
+              "ItemRef": [
+                {
+                  "ItemOID": "I.24",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.25",
+                  "Mandatory": "No"
+                }
+              ],
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Skylights"
+                }
+              },
+              "Name": "IG.4",
+              "Repeating": "Yes"
+            },
+            {
+              "OID": "IG.5",
+              "ItemRef": [
+                {
+                  "ItemOID": "I.26",
+                  "Mandatory": "No"
+                }
+              ],
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Roof Vents"
+                }
+              },
+              "Name": "IG.5",
+              "Repeating": "Yes"
+            },
+            {
+              "OID": "IG.6",
+              "ItemRef": [
+                {
+                  "ItemOID": "I.45",
+                  "Mandatory": "No"
+                },
+                {
+                  "ItemOID": "I.44",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.27",
+                  "ReadOnly": "Yes"
+                },
+                {
+                  "ItemOID": "I.61",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.28"
+                },
+                {
+                  "ItemOID": "I.62",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.29"
+                },
+                {
+                  "ItemOID": "I.63",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.30"
+                },
+                {
+                  "ItemOID": "I.64",
+                  "Mandatory": "No",
+                  "CollectionExceptionConditionOID": "C.31"
+                }
+              ],
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Roof Measurements"
+                }
+              },
+              "Name": "IG.6",
+              "Repeating": "No"
+            },
+            {
+              "OID": "IG.7",
+              "ItemRef": [
+                {
+                  "ItemOID": "I.67",
+                  "Mandatory": "No",
+                  "MethodOID": "M.5"
+                },
+                {
+                  "ItemOID": "I.68",
+                  "Mandatory": "No",
+                  "MethodOID": "M.4"
+                }
+              ],
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Waste Calculation"
+                }
+              },
+              "Name": "IG.7",
+              "Repeating": "No"
+            }
+          ],
+          "ItemDef": [
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What material is your roof made of?"
+                }
+              },
+              "OID": "I.1",
+              "Name": "I.1",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.1"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What type of roof do you have?"
+                }
+              },
+              "OID": "I.2",
+              "Name": "I.2",
+              "DataType": "multiselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.2"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How old is your current roof?"
+                }
+              },
+              "OID": "I.5",
+              "Name": "I.5",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.4"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Have you noticed any of the following in your Roof? (Select all that apply)"
+                }
+              },
+              "OID": "I.7",
+              "Name": "I.7",
+              "DataType": "multiselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.5"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How much area of the roof is affected from above?"
+                }
+              },
+              "OID": "I.8",
+              "Name": "I.8",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.25"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How much are the shingles curling?"
+                }
+              },
+              "OID": "I.10",
+              "Name": "I.10",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.7"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How far is the Flexibility of the Shingles?"
+                }
+              },
+              "OID": "I.11",
+              "Name": "I.11",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.8"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How much granule coverage do the asphalt shingles have?"
+                }
+              },
+              "OID": "I.12",
+              "Name": "I.12",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.9"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Where have you seen the leakage signs?"
+                }
+              },
+              "OID": "I.13",
+              "Name": "I.13",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.10"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Specify the location of leakage signs"
+                }
+              },
+              "OID": "I.14",
+              "Name": "I.14",
+              "DataType": "text"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How much area is affected from leakage?"
+                }
+              },
+              "OID": "I.15",
+              "Name": "I.15",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.11"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Which flashing is damaged or missing?"
+                }
+              },
+              "OID": "I.16",
+              "Name": "I.16",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.12"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the condition of the Flashing?"
+                }
+              },
+              "OID": "I.17",
+              "Name": "I.17",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.13"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How far is the moss and lichen growth on the roof?"
+                }
+              },
+              "OID": "I.18",
+              "Name": "I.18",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.14"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How far is the black algae growth on the roof?"
+                }
+              },
+              "OID": "I.50",
+              "Name": "I.50",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.30"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How much is the debris accumulation?"
+                }
+              },
+              "OID": "I.19",
+              "Name": "I.19",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.15"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Are you currently enrolled in any type of a roof maintenance program?"
+                }
+              },
+              "OID": "I.65",
+              "Name": "I.65",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.32"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "One thing to be aware of - debris and buildup can increase the risk of leaks overtime. Would it be helpful to see how a simple annual or semi-annual maintenance program can prevent that?"
+                }
+              },
+              "OID": "I.66",
+              "Name": "I.66",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.35"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Does the Debris clog in Gutter & Downspouts?"
+                }
+              },
+              "OID": "I.20",
+              "Name": "I.20",
+              "DataType": "boolean"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How many roof facets do you have on your house?"
+                }
+              },
+              "OID": "I.21",
+              "Name": "I.21",
+              "DataType": "integer",
+              "MetaKey": "TotalRoofFacets"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the material used for Skylight in roof?"
+                }
+              },
+              "OID": "I.24",
+              "Name": "I.24",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.19"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the condition of the Skylight in roof?"
+                }
+              },
+              "OID": "I.25",
+              "Name": "I.25",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.20"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the condition of the Roof Vent in roof?"
+                }
+              },
+              "OID": "I.26",
+              "Name": "I.26",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.22"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the condition of the Pipes in roof?"
+                }
+              },
+              "OID": "I.28",
+              "Name": "I.28",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.21"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the length of the roof?"
+                }
+              },
+              "OID": "I.32",
+              "Name": "I.32",
+              "DataType": "integer"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the width of the roof?"
+                }
+              },
+              "OID": "I.33",
+              "Name": "I.33",
+              "DataType": "integer"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How much square footage does this roof occupy?"
+                }
+              },
+              "OID": "I.34",
+              "Name": "I.34",
+              "DataType": "integer"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How many Skylights are present in this particular roof?"
+                }
+              },
+              "OID": "I.35",
+              "Name": "I.35",
+              "DataType": "integer",
+              "ImageUrl": "skylight.jpg",
+              "ThumbnailUrl": "tn_skylight.jpg"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How many Roof Vents are present in this particular roof?"
+                }
+              },
+              "OID": "I.37",
+              "Name": "I.37",
+              "DataType": "integer",
+              "ImageUrl": "roof_vent.jpg",
+              "ThumbnailUrl": "tn_roof_vent.jpg"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Do you have any pipes coming out of your roof?"
+                }
+              },
+              "OID": "I.38",
+              "Name": "I.38",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.27"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Ridges"
+                }
+              },
+              "OID": "I.39",
+              "Name": "I.39",
+              "DataType": "integer",
+              "MeasurementOid": "MU.29",
+              "MetaKey": "LengthRidge",
+              "ImageUrl": "ridge_length.jpg",
+              "ThumbnailUrl": "tn_ridge_length.jpg"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Eaves/Starter"
+                }
+              },
+              "OID": "I.40",
+              "Name": "I.40",
+              "DataType": "integer",
+              "MeasurementOid": "MU.29",
+              "MetaKey": "LengthEave",
+              "ImageUrl": "eave_length.jpg",
+              "ThumbnailUrl": "tn_eave_length.jpg"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Valleys"
+                }
+              },
+              "OID": "I.41",
+              "Name": "I.41",
+              "DataType": "integer",
+              "MeasurementOid": "MU.29",
+              "MetaKey": "LengthValley",
+              "ImageUrl": "valley_length.jpg",
+              "ThumbnailUrl": "tn_valley_length.jpg"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Rakes"
+                }
+              },
+              "OID": "I.42",
+              "Name": "I.42",
+              "DataType": "integer",
+              "MeasurementOid": "MU.29",
+              "MetaKey": "LengthRake",
+              "ImageUrl": "rake_length.jpg",
+              "ThumbnailUrl": "tn_rake_length.jpg"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Hips"
+                }
+              },
+              "OID": "I.43",
+              "Name": "I.43",
+              "DataType": "integer",
+              "MeasurementOid": "MU.29",
+              "MetaKey": "LengthHip",
+              "ImageUrl": "hip_length.jpg",
+              "ThumbnailUrl": "tn_hip_length.jpg"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the name of building - 1?"
+                }
+              },
+              "OID": "I.44",
+              "Name": "I.44",
+              "DataType": "text",
+              "MetaKey": "measurementByStructure[].BuildingName",
+              "AutoFillRef": {
+                "TradeOID": "A.1",
+                "ItemOID": "I.1"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How many buildings were measured"
+                }
+              },
+              "OID": "I.45",
+              "Name": "I.45",
+              "DataType": "integer",
+              "MetaKey": "measurementByStructure[]"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What are the roof pitch measurements?"
+                }
+              },
+              "OID": "I.46",
+              "Name": "I.46",
+              "DataType": "singleselect",
+              "MetaKey": "Pitch",
+              "CodeListRef": {
+                "CodeListOID": "CL.31"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the roof area for this pitch?"
+                }
+              },
+              "OID": "I.47",
+              "Name": "I.47",
+              "DataType": "integer",
+              "MeasurementOid": "MU.25",
+              "MetaKey": "PitchTable[].RoofArea"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Do you have solar panels on the roof?"
+                }
+              },
+              "OID": "I.51",
+              "Name": "I.51",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.28"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What percentage (%) of this facet/roof section is covered with solar panels?"
+                }
+              },
+              "OID": "I.52",
+              "Name": "I.52",
+              "DataType": "float"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Do you have chimneys on the roof?"
+                }
+              },
+              "OID": "I.53",
+              "Name": "I.53",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.29"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How many chimneys are there on this facet/roof section?"
+                }
+              },
+              "OID": "I.54",
+              "Name": "I.54",
+              "DataType": "integer"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "How many pipes?"
+                }
+              },
+              "OID": "I.55",
+              "Name": "I.55",
+              "DataType": "integer"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Predominant Pitch"
+                }
+              },
+              "OID": "I.56",
+              "Name": "I.56",
+              "DataType": "singleselect",
+              "CodeListRef": {
+                "CodeListOID": "CL.33"
+              }
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Drip Edge (Eaves + Rakes)"
+                }
+              },
+              "OID": "I.57",
+              "Name": "I.57",
+              "DataType": "text"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Parapet Walls"
+                }
+              },
+              "OID": "I.58",
+              "Name": "I.58",
+              "DataType": "text"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Flashing"
+                }
+              },
+              "OID": "I.59",
+              "Name": "I.59",
+              "DataType": "text"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Step flashing"
+                }
+              },
+              "OID": "I.60",
+              "Name": "I.60",
+              "DataType": "text"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Total Area (All Pitches)"
+                }
+              },
+              "OID": "I.6",
+              "Name": "I.6",
+              "DataType": "integer",
+              "MeasurementOid": "MU.25",
+              "MetaKey": "Area"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the name of building - 2?"
+                }
+              },
+              "OID": "I.61",
+              "Name": "I.61",
+              "DataType": "text",
+              "MetaKey": "measurementByStructure[].BuildingName"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the name of building - 3?"
+                }
+              },
+              "OID": "I.62",
+              "Name": "I.62",
+              "DataType": "text",
+              "MetaKey": "measurementByStructure[].BuildingName"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the name of building - 4?"
+                }
+              },
+              "OID": "I.63",
+              "Name": "I.63",
+              "DataType": "text",
+              "MetaKey": "measurementByStructure[].BuildingName"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "What is the name of building - 5?"
+                }
+              },
+              "OID": "I.64",
+              "Name": "I.64",
+              "DataType": "text",
+              "MetaKey": "measurementByStructure[].BuildingName"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Area"
+                }
+              },
+              "OID": "I.67",
+              "Name": "I.67",
+              "DataType": "text",
+              "MeasurementOid": "MU.25"
+            },
+            {
+              "Question": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Waste"
+                }
+              },
+              "OID": "I.68",
+              "Name": "I.68",
+              "DataType": "text",
+              "MeasurementOid": "MU.1"
+            }
+          ],
+          "MethodDef": [
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "M.1"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.21 : RepeatCount)"
+              },
+              "OID": "M.1",
+              "Name": "M.1"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "M.2"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.35 : RepeatCount)"
+              },
+              "OID": "M.2",
+              "Name": "M.2"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "M.3"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.37 : RepeatCount)"
+              },
+              "OID": "M.3",
+              "Name": "M.3"
+            },
+            {
+              "OID": "M.4",
+              "Name": "M.4",
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Calculate Waste Percentage from Waste Area"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "((I.67 - I.6) / I.6) * 100"
+              },
+              "MethodType": "WasteCalculation"
+            },
+            {
+              "OID": "M.5",
+              "Name": "M.5",
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Calculate Waste Area from Waste Percentage"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "I.6 * (1 + I.68 / 100)"
+              },
+              "MethodType": "WasteCalculation"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "Calculate total roof area: sum of length x width across all facets"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "(parseInt(I.32)||0) * (parseInt(I.33)||0)"
+              },
+              "OID": "M.8",
+              "Name": "M.CALC_FacetSqFt"
+            }
+          ],
+          "CodeList": [
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Good"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Fair"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Poor"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.22",
+              "Name": "CL.22",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Good"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Fair"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Poor"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.21",
+              "Name": "CL.21",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Good"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Fair"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Poor"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.20",
+              "Name": "CL.20",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Glass"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false,
+                  "ImageUrl": "glass_skylight.jpg",
+                  "ThumbnailUrl": "tn_glass_skylight.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Acrylic"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false,
+                  "ImageUrl": "acrylic_skylight.jpg",
+                  "ThumbnailUrl": "tn_acrylic_skylight.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Polycarbonate"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false,
+                  "ImageUrl": "polycarbonate_skylight.jpg",
+                  "ThumbnailUrl": "tn_polycarbonate_skylight.jpg"
+                }
+              ],
+              "OID": "CL.19",
+              "Name": "CL.19",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [],
+              "OID": "CL.17",
+              "Name": "CL.17",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Option 1"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Option 2"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Option 3"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.16",
+              "Name": "CL.16",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Only a Small Area"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Multiple areas across the roof"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Most or all of the roof"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.15",
+              "Name": "CL.15",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Yes"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "No"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.32",
+              "Name": "CL.32",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Yes"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "No"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.35",
+              "Name": "CL.35",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Only a Small Area "
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Multiple areas across the roof"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Most or all of the roof"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.14",
+              "Name": "CL.14",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Only a Small Area "
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Multiple areas across the roof"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Most or all of the roof"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.30",
+              "Name": "CL.30",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Minor damage in flashing"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Minor damage in flashing Major damage in flashing"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Missing sections"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.13",
+              "Name": "CL.13",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Step / Wall Flashing"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false,
+                  "ImageUrl": "step_wall_flashing_missing.jpg",
+                  "ThumbnailUrl": "tn_step_wall_flashing_missing.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Perimeter Edge Flashing"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false,
+                  "ImageUrl": "perimeter_edge_flashing_missing.jpg",
+                  "ThumbnailUrl": "tn_perimeter_edge_flashing_missing.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Chimney (Counter Flashing)"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false,
+                  "ImageUrl": "chimney_flashing_missing.jpg",
+                  "ThumbnailUrl": "tn_chimney_flashing_missing.jpg"
+                }
+              ],
+              "OID": "CL.12",
+              "Name": "CL.12",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Only a Small Area"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Multiple areas across the surface"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Most or all of the surface"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.11",
+              "Name": "CL.11",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Walls"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false,
+                  "ImageUrl": "wall_roofleaks.jpg",
+                  "ThumbnailUrl": "tn_wall_roofleaks.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Ceilings"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false,
+                  "ImageUrl": "ceiling_roofleaks.jpg",
+                  "ThumbnailUrl": "tn_ceiling_roofleaks.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "In the attic"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false,
+                  "ImageUrl": "attic_leaks.jpg",
+                  "ThumbnailUrl": "tn_attic_leaks.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Other"
+                    }
+                  },
+                  "CodedValue": "4",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.10",
+              "Name": "CL.10",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Granule coverage 70\u2013100%"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Granule coverage less than 70%"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.9",
+              "Name": "CL.9",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "100%"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "30-75%"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "0-30%"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.8",
+              "Name": "CL.8",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Significantly curled"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Slightly Curved"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.7",
+              "Name": "CL.7",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Cracked or broken shingles"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false,
+                  "ImageUrl": "cracked_shingles.jpg",
+                  "ThumbnailUrl": "tn_cracked_shingles.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Curled Shingles"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false,
+                  "ImageUrl": "curled_shingles.jpg",
+                  "ThumbnailUrl": "tn_curled_shingles.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Granular loss in the asphalt sheets"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false,
+                  "ImageUrl": "granular_loss.jpg",
+                  "ThumbnailUrl": "tn_granular_loss.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Leaks inside your house"
+                    }
+                  },
+                  "CodedValue": "4",
+                  "IsEnabled": false,
+                  "ImageUrl": "leaking_water.jpg",
+                  "ThumbnailUrl": "tn_leaking_water.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Damage or missing flashing"
+                    }
+                  },
+                  "CodedValue": "5",
+                  "IsEnabled": false,
+                  "ImageUrl": "Damage_or_missing_flashing.jpg",
+                  "ThumbnailUrl": "tn_Damage_or_missing_flashing.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Moss and lichen growth"
+                    }
+                  },
+                  "CodedValue": "6",
+                  "IsEnabled": false,
+                  "ImageUrl": "Moss_algae_growth.jpg",
+                  "ThumbnailUrl": "tn_Moss_algae_growth.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Black Algae"
+                    }
+                  },
+                  "CodedValue": "7",
+                  "IsEnabled": false,
+                  "ImageUrl": "black_algae.jpg",
+                  "ThumbnailUrl": "tn_black_algae.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Debris accumulation"
+                    }
+                  },
+                  "CodedValue": "8",
+                  "IsEnabled": false,
+                  "ImageUrl": "debris_roof.jpg",
+                  "ThumbnailUrl": "tn_debris_roof.jpg"
+                }
+              ],
+              "OID": "CL.5",
+              "Name": "CL.5",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Less than 10 years"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "10\u201320 years "
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Over 20 years"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.4",
+              "Name": "CL.4",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Sloped"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false,
+                  "ImageUrl": "sloped_roof.jpg",
+                  "ThumbnailUrl": "tn_sloped_roof.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Flat"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false,
+                  "ImageUrl": "flat_roof.jpg",
+                  "ThumbnailUrl": "tn_flat_roof.jpg"
+                }
+              ],
+              "OID": "CL.2",
+              "Name": "CL.2",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Asphalt"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false,
+                  "ImageUrl": "asphalt_shingle_roof.jpg",
+                  "ThumbnailUrl": "tn_asphalt_shingle_roof.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Metal"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false,
+                  "ImageUrl": "metal.jpg",
+                  "ThumbnailUrl": "tn_metal_roof.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Tile"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false,
+                  "ImageUrl": "tile_roof.jpg",
+                  "ThumbnailUrl": "tn_tile_roof.jpg"
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Wood"
+                    }
+                  },
+                  "CodedValue": "4",
+                  "IsEnabled": false,
+                  "ImageUrl": "wood_roof.jpg",
+                  "ThumbnailUrl": "tn_wood_roof.jpg"
+                }
+              ],
+              "OID": "CL.1",
+              "Name": "CL.1",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "0-30%"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "30-70%"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "70-100%"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.25",
+              "Name": "CL.25",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Yes"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "No"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.27",
+              "Name": "CL.27",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Yes"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "No"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.28",
+              "Name": "CL.28",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "Yes"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "No"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.29",
+              "Name": "CL.29",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "< 4:12 (moderate)"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "5:12 - 7:12 (standard)"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "8:12 - 11:12 (steep)"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "12:12+ (very steep)"
+                    }
+                  },
+                  "CodedValue": "4",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.31",
+              "Name": "CL.31",
+              "DataType": "text"
+            },
+            {
+              "CodeListItem": [
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "4/12"
+                    }
+                  },
+                  "CodedValue": "1",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "5/12"
+                    }
+                  },
+                  "CodedValue": "2",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "6/12"
+                    }
+                  },
+                  "CodedValue": "3",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "7\u20138/12"
+                    }
+                  },
+                  "CodedValue": "4",
+                  "IsEnabled": false
+                },
+                {
+                  "Decode": {
+                    "TranslatedText": {
+                      "lang": "en",
+                      "text": "<3/12"
+                    }
+                  },
+                  "CodedValue": "5",
+                  "IsEnabled": false
+                }
+              ],
+              "OID": "CL.33",
+              "Name": "CL.33",
+              "DataType": "text"
+            }
+          ],
+          "ConditionDef": [
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.1"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.1 == \"1\")"
+              },
+              "OID": "C.1",
+              "Name": "C.1"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.2"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.2 == \"1\")"
+              },
+              "OID": "C.2",
+              "Name": "C.2"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.3"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.2 == \"2\")"
+              },
+              "OID": "C.3",
+              "Name": "C.3"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.4"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"1\")"
+              },
+              "OID": "C.4",
+              "Name": "C.4"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.6"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"2\")"
+              },
+              "OID": "C.6",
+              "Name": "C.6"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.7"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"2\")"
+              },
+              "OID": "C.7",
+              "Name": "C.7"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.8"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"3\")"
+              },
+              "OID": "C.8",
+              "Name": "C.8"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.9"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"4\")"
+              },
+              "OID": "C.9",
+              "Name": "C.9"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.10"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.13 == \"4\")"
+              },
+              "OID": "C.10",
+              "Name": "C.10"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.11"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"4\")"
+              },
+              "OID": "C.11",
+              "Name": "C.11"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.12"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"5\")"
+              },
+              "OID": "C.12",
+              "Name": "C.12"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.13"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"5\")"
+              },
+              "OID": "C.13",
+              "Name": "C.13"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.14"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"6\")"
+              },
+              "OID": "C.14",
+              "Name": "C.14"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.26"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"7\")"
+              },
+              "OID": "C.26",
+              "Name": "C.26"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.15"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"8\")"
+              },
+              "OID": "C.15",
+              "Name": "C.15"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.16"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"8\")"
+              },
+              "OID": "C.16",
+              "Name": "C.16"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.32"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.7 == \"8\")"
+              },
+              "OID": "C.32",
+              "Name": "C.32"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.33"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.65 == \"1\")"
+              },
+              "OID": "C.33",
+              "Name": "C.33"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.21"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.22 == \"Yes\")"
+              },
+              "OID": "C.21",
+              "Name": "C.21"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.23"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.38 == \"1\")"
+              },
+              "OID": "C.23",
+              "Name": "C.23"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.24"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.51 == \"1\")"
+              },
+              "OID": "C.24",
+              "Name": "C.24"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.25"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.53 == \"1\")"
+              },
+              "OID": "C.25",
+              "Name": "C.25"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.27"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.45 == \"1\" || I.45 == \"2\" || I.45 == \"3\" || I.45 == \"4\" || I.45 == \"5\")"
+              },
+              "OID": "C.27",
+              "Name": "C.27"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.28"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.45 == \"2\" || I.45 == \"3\" || I.45 == \"4\" || I.45 == \"5\")"
+              },
+              "OID": "C.28",
+              "Name": "C.28"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.29"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.45 == \"3\" || I.45 == \"4\" || I.45 == \"5\")"
+              },
+              "OID": "C.29",
+              "Name": "C.29"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.30"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.45 == \"4\" || I.45 == \"5\")"
+              },
+              "OID": "C.30",
+              "Name": "C.30"
+            },
+            {
+              "Description": {
+                "TranslatedText": {
+                  "lang": "en",
+                  "text": "C.31"
+                }
+              },
+              "FormalExpression": {
+                "Context": "OpenEDC",
+                "text": "!(I.45 == \"5\")"
+              },
+              "OID": "C.31",
+              "Name": "C.31"
+            }
+          ],
+          "Mappings": [
+            {
+              "Name": "EagleView",
+              "Source": "EagleView",
+              "LastUpdated": "2025-04-01T12:00:00Z",
+              "Description": "Mapping for EagleView roofing data extraction",
+              "Versions": [
+                {
+                  "VersionOID": "1.0",
+                  "VersionName": "Initial Release",
+                  "CreatedBy": "Admin",
+                  "CreatedDate": "2025-09-24T08:00:00Z",
+                  "ItemGroupDef": [
+                    {
+                      "OID": "IG.6",
+                      "Name": "IG.6",
+                      "Repeating": "No",
+                      "Description": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Roof Measurements"
+                        }
+                      },
+                      "ItemDef": [
+                        {
+                          "OID": "I.44",
+                          "Name": "measurementByStructure[].BuildingName",
+                          "MetaKey": "measurementByStructure[].BuildingName"
+                        },
+                        {
+                          "OID": "I.45",
+                          "Name": "measurementByStructure[]",
+                          "MetaKey": "measurementByStructure[]"
+                        }
+                      ]
+                    },
+                    {
+                      "OID": "IG.3",
+                      "Name": "IG.3",
+                      "Repeating": "Yes",
+                      "Description": {
+                        "TranslatedText": {
+                          "lang": "en",
+                          "text": "Roof Facets & Area"
+                        }
+                      },
+                      "ItemDef": [
+                        {
+                          "OID": "I.21",
+                          "Name": "TotalRoofFacets",
+                          "MetaKey": "TotalRoofFacets"
+                        },
+                        {
+                          "OID": "I.39",
+                          "Name": "LengthRidge",
+                          "MetaKey": "LengthRidge"
+                        },
+                        {
+                          "OID": "I.40",
+                          "Name": "LengthEave",
+                          "MetaKey": "LengthEave"
+                        },
+                        {
+                          "OID": "I.41",
+                          "Name": "LengthValley",
+                          "MetaKey": "LengthValley"
+                        },
+                        {
+                          "OID": "I.42",
+                          "Name": "LengthRake",
+                          "MetaKey": "LengthRake"
+                        },
+                        {
+                          "OID": "I.43",
+                          "Name": "LengthHip",
+                          "MetaKey": "LengthHip"
+                        },
+                        {
+                          "OID": "I.6",
+                          "Name": "Area",
+                          "MetaKey": "Area"
+                        },
+                        {
+                          "OID": "I.46",
+                          "Name": "Pitch",
+                          "MetaKey": "Pitch"
+                        },
+                        {
+                          "OID": "I.47",
+                          "Name": "pitchTable[].RoofArea",
+                          "MetaKey": "pitchTable[].RoofArea"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "OID": "MDV.2",
+          "Name": "MetaDataVersion"
+        }
+      ],
+      "BasicDefinition": {
+        "MeasurementUnit": [
+          {
+            "Name": "MU.1",
+            "OID": "MU.1",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "%"
+              }
+            }
+          },
+          {
+            "Name": "MU.2",
+            "OID": "MU.2",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "kg"
+              }
+            }
+          },
+          {
+            "Name": "MU.3",
+            "OID": "MU.3",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "mL"
+              }
+            }
+          },
+          {
+            "Name": "MU.5",
+            "OID": "MU.5",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "cm<sup>3</sup>"
+              }
+            }
+          },
+          {
+            "Name": "MU.6",
+            "OID": "MU.6",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "s"
+              }
+            }
+          },
+          {
+            "Name": "MU.7",
+            "OID": "MU.7",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "(24HR)"
+              }
+            }
+          },
+          {
+            "Name": "MU.8",
+            "OID": "MU.8",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "(m)"
+              }
+            }
+          },
+          {
+            "Name": "MU.10",
+            "OID": "MU.10",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "(mGy)"
+              }
+            }
+          },
+          {
+            "Name": "MU.12",
+            "OID": "MU.12",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "(\u00b0C)"
+              }
+            }
+          },
+          {
+            "Name": "MU.4",
+            "OID": "MU.4",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "Equipment"
+              }
+            }
+          },
+          {
+            "Name": "MU.13",
+            "OID": "MU.13",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "KG 0 LB"
+              }
+            }
+          },
+          {
+            "Name": "MU.15",
+            "OID": "MU.15",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "kg"
+              }
+            }
+          },
+          {
+            "Name": "MU.16",
+            "OID": "MU.16",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "% of surface"
+              }
+            }
+          },
+          {
+            "Name": "MU.19",
+            "OID": "MU.19",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "Return of Conduction"
+              }
+            }
+          },
+          {
+            "Name": "MU.20",
+            "OID": "MU.20",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "in"
+              }
+            }
+          },
+          {
+            "Name": "MU.21",
+            "OID": "MU.21",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "lb"
+              }
+            }
+          },
+          {
+            "Name": "MU.17",
+            "OID": "MU.17",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "cm"
+              }
+            }
+          },
+          {
+            "Name": "MU.18",
+            "OID": "MU.18",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "mg"
+              }
+            }
+          },
+          {
+            "Name": "MU.14",
+            "OID": "MU.14",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "(mL)"
+              }
+            }
+          },
+          {
+            "Name": "MU.9",
+            "OID": "MU.9",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "(mm:ss)"
+              }
+            }
+          },
+          {
+            "Name": "MU.22",
+            "OID": "MU.22",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "mL/m<sup>2</sup>"
+              }
+            }
+          },
+          {
+            "Name": "MU.23",
+            "OID": "MU.23",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "mcg"
+              }
+            }
+          },
+          {
+            "Name": "MU.24",
+            "OID": "MU.24",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "in"
+              }
+            }
+          },
+          {
+            "Name": "MU.25",
+            "OID": "MU.25",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "sq.ft"
+              }
+            }
+          },
+          {
+            "Name": "MU.26",
+            "OID": "MU.26",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "PSF"
+              }
+            }
+          },
+          {
+            "Name": "MU.27",
+            "OID": "MU.27",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "days"
+              }
+            }
+          },
+          {
+            "Name": "MU.28",
+            "OID": "MU.28",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "$"
+              }
+            }
+          },
+          {
+            "Name": "MU.29",
+            "OID": "MU.29",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "ft"
+              }
+            }
+          },
+          {
+            "Name": "MU.30",
+            "OID": "MU.30",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "years"
+              }
+            }
+          },
+          {
+            "Name": "MU.31",
+            "OID": "MU.31",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "LF"
+              }
+            }
+          },
+          {
+            "Name": "MU.32",
+            "OID": "MU.32",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "ft and in"
+              }
+            }
+          },
+          {
+            "Name": "MU.33",
+            "OID": "MU.33",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "qty"
+              }
+            }
+          },
+          {
+            "Name": "MU.34",
+            "OID": "MU.34",
+            "Symbol": {
+              "TranslatedText": {
+                "lang": "en",
+                "text": "pounds"
+              }
+            }
+          }
+        ]
+      },
+      "OID": "P.6"
+    },
+    "xmlns": "",
+    "FileType": "Snapshot",
+    "FileOID": "New Project",
+    "CreationDateTime": "2024-06-24T10:48:11.355Z",
+    "ODMVersion": "1.3.2",
+    "SourceSystem": "",
+    "AdminData": {
+      "User": {
+        "FirstName": "New",
+        "LastName": "User",
+        "OID": "U.1"
+      },
+      "OID": "P.6"
+    },
+    "BuildingData": {
+      "EventData": [
+        {
+          "FormData": [
+            {
+              "ItemGroupData": [
+                {
+                  "ItemData": [],
+                  "ItemGroupOID": "",
+                  "ItemGroupRepeatKey": 0
+                },
+                {
+                  "ItemData": [],
+                  "ItemGroupOID": "",
+                  "ItemGroupRepeatKey": 0
+                }
+              ],
+              "FormOID": "F.3",
+              "TransactionType": "Insert"
+            }
+          ],
+          "EventOID": "E.3"
+        }
+      ],
+      "Key": "123",
+      "OID": "P.6",
+      "MetaDataVersionOID": "MDV.2"
+    }
+  }
+}

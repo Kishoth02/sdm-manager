@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "filename": "safehv.json",
+    "original_filename": "safehv.csv",
+    "original_path": "",
+    "uploaded_at": "2026-06-18T15:34:11.973615",
+    "count": 7
+  },
+  "mcqs": [
+    {
+      "id": "79c4de46",
+      "question": "Did the participant sign a consent form?",
+      "option_a": "nan",
+      "option_b": "nan",
+      "option_c": "nan",
+      "option_d": "nan",
+      "answer": "N",
+      "difficulty": "Nan",
+      "topic": "New Group",
+      "tags": "boolean",
+      "explanation": ""
+    },
+    {
+      "id": "6ab42912",
+      "question": "Enter the date the consent was signed by the participant",
+      "option_a": "nan",
+      "option_b": "nan",
+      "option_c": "nan",
+      "option_d": "nan",
+      "answer": "N",
+      "difficulty": "Nan",
+      "topic": "New Group",
+      "tags": "date",
+      "explanation": ""
+    },
+    {
+      "id": "d97bf4b1",
+      "question": "Select the protocol version active at the site at time of consent:",
+      "option_a": "2.0_17-FEB-2024",
+      "option_b": "nan",
+      "option_c": "nan",
+      "option_d": "nan",
+      "answer": "N",
+      "difficulty": "Nan",
+      "topic": "New Group",
+      "tags": "nan",
+      "explanation": ""
+    },
+    {
+      "id": "e806a219",
+      "question": "Was the participant enrolled under an IRB-approved waiver of consent?",
+      "option_a": "nan",
+      "option_b": "nan",
+      "option_c": "nan",
+      "option_d": "nan",
+      "answer": "N",
+      "difficulty": "Nan",
+      "topic": "New Group",
+      "tags": "boolean",
+      "explanation": ""
+    },
+    {
+      "id": "cd4ecc5f",
+      "question": "Total number of LAAO implant procedures scheduled for the implanting investigator on the date this participant's procedure is scheduled:",
+      "option_a": "nan",
+      "option_b": "nan",
+      "option_c": "nan",
+      "option_d": "nan",
+      "answer": "N",
+      "difficulty": "Nan",
+      "topic": "New Group",
+      "tags": "integer",
+      "explanation": ""
+    },
+    {
+      "id": "3544c574",
+      "question": "Does the participant meet all eligibility criteria?",
+      "option_a": "nan",
+      "option_b": "nan",
+      "option_c": "nan",
+      "option_d": "nan",
+      "answer": "N",
+      "difficulty": "Nan",
+      "topic": "New Group",
+      "tags": "boolean",
+      "explanation": ""
+    },
+    {
+      "id": "5cde7768",
+      "question": "Specify:",
+      "option_a": "nan",
+      "option_b": "nan",
+      "option_c": "nan",
+      "option_d": "nan",
+      "answer": "N",
+      "difficulty": "Nan",
+      "topic": "New Group",
+      "tags": "nan",
+      "explanation": ""
+    }
+  ]
+}

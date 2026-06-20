@@ -1,0 +1,6130 @@
+[
+  {
+    "id": "68d2bad6",
+    "question": "Specify the desired Width of the Greenhouse (max footprint)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.1",
+    "item_oid": "I.1",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "f552e0ec",
+    "question": "Specify the desired Length of the Greenhouse (max footprint)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.2",
+    "item_oid": "I.2",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "a87b6ba6",
+    "question": "Do you have an Existing Foundation or do you want to build a New Foundation",
+    "option_a": "I have an Existing Foundation",
+    "option_b": "I want to build a New Foundation",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "I have an Existing Foundation",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.3",
+    "item_oid": "I.3",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "10521487",
+    "question": "Describe your Existing Foundation type?",
+    "option_a": "Concrete",
+    "option_b": "Block",
+    "option_c": "Wood",
+    "option_d": "Clay",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Concrete",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.4",
+    "item_oid": "I.4",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.3",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "88363253",
+    "question": "Enter the Width of the foundation in Feet and Inches",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.5",
+    "item_oid": "I.5",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.4",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "590ed315",
+    "question": "Enter the Width of the foundation in Feet and Inches",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.6",
+    "item_oid": "I.6",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.4",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "1de9551d",
+    "question": "Enter the Width of the foundation in Feet and Inches",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.7",
+    "item_oid": "I.7",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.4",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "39da22cd",
+    "question": "Enter the Height of the foundation in Feet and Inches",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.190",
+    "item_oid": "I.190",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.4",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "462c33cb",
+    "question": "Enter the Height of the foundation in Feet and Inches",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.193",
+    "item_oid": "I.193",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.4",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b558dbc5",
+    "question": "Enter the Height of the foundation in Feet and Inches",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.194",
+    "item_oid": "I.194",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.4",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "d06bd596",
+    "question": "Enter your Kneewall Length",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.8",
+    "item_oid": "I.8",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.3",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "2a291adc",
+    "question": "Please Specify Your Greenhouse Type",
+    "option_a": "Free Standing",
+    "option_b": "Home Attached",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Free Standing",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.11",
+    "item_oid": "I.11",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "418d4d28",
+    "question": "Choose the type of Home Attached Setup desired",
+    "option_a": "Gable Attached",
+    "option_b": "Lean To",
+    "option_c": "Gable Attached Lean To",
+    "option_d": "Double Gable Attached Lean To",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Gable Attached",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.12",
+    "item_oid": "I.12",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.11",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "9cd5a642",
+    "question": "Is there a Maximum Height Limit?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.13",
+    "item_oid": "I.13",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.11",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "a8822e0a",
+    "question": "What is the Height Limit (Feet & Inches)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.14",
+    "item_oid": "I.14",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.13",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "4c65bfa0",
+    "question": "What kind of Roof Pitch do you prefer?",
+    "option_a": "Traditional - 5/12",
+    "option_b": "Pacific Style - 5/12",
+    "option_c": "Cottage Style - 8.5/12",
+    "option_d": "Cape Cod Style - 12/12",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Traditional - 5/12",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.15",
+    "item_oid": "I.15",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "9e365f10",
+    "question": "Specify the pitch.",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "text",
+    "explanation": "I.16",
+    "item_oid": "I.16",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.15",
+      "parent_value": "5",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "a35c248e",
+    "question": "Choose the sidewall height of your Greenhouse",
+    "option_a": "All Walls",
+    "option_b": "Custom Size",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "All Walls",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.229",
+    "item_oid": "I.229",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "89134ab4",
+    "question": "Select the height",
+    "option_a": "Standard 5.5ft",
+    "option_b": "Other height",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Standard 5.5ft",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.280",
+    "item_oid": "I.280",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.229",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "d18ac714",
+    "question": "Enter the sidewall height",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.281",
+    "item_oid": "I.281",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.280",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "d441ac31",
+    "question": "Enter the Left Gable height",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.282",
+    "item_oid": "I.282",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.229",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f503e4f8",
+    "question": "Enter the Left Sidewall height",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.283",
+    "item_oid": "I.283",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.229",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "5ef0fbec",
+    "question": "Enter the Right Gable height",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.284",
+    "item_oid": "I.284",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.229",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "6937c0e3",
+    "question": "Enter the Right Sidewall height",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.285",
+    "item_oid": "I.285",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.229",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "4d80703f",
+    "question": "Choose the Greenhouse Frame Color",
+    "option_a": "White",
+    "option_b": "Green",
+    "option_c": "Brown",
+    "option_d": "Black",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "White",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.231",
+    "item_oid": "I.231",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "bb0d1e66",
+    "question": "Specify the color required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "text",
+    "explanation": "I.232",
+    "item_oid": "I.232",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.231",
+      "parent_value": "5",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "731c4f56",
+    "question": "Choose a Glazing preference for your Greenhouse",
+    "option_a": "Glass",
+    "option_b": "Polycarb",
+    "option_c": "Combo",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.17",
+    "item_oid": "I.17",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "86485be3",
+    "question": "Choose the type of Glass Required",
+    "option_a": "3mm Single Glass",
+    "option_b": "6mm Single Glass",
+    "option_c": "16mm Double Glass",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "3mm Single Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.18",
+    "item_oid": "I.18",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.17",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "979ebc16",
+    "question": "Do you Want to Tint the Glass or Laminate it?",
+    "option_a": "Tint",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tint",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.19",
+    "item_oid": "I.19",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.18",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "c4fbc4b5",
+    "question": "Choose the Tint Color",
+    "option_a": "Green",
+    "option_b": "Bronze",
+    "option_c": "Gray",
+    "option_d": "Custom",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Green",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.20",
+    "item_oid": "I.20",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.19",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "2dbe12bd",
+    "question": "Specify the color required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "text",
+    "explanation": "I.21",
+    "item_oid": "I.21",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.20",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f29b340e",
+    "question": "What tint do you want on 6mm Single Glass?",
+    "option_a": "Grey",
+    "option_b": "Green",
+    "option_c": "Bronze",
+    "option_d": "Clear",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Grey",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.22",
+    "item_oid": "I.22",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.18",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "cf0cd8d0",
+    "question": "Choose is the configuration of 16mm double glass",
+    "option_a": "Clear",
+    "option_b": "Low-E",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Clear",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.23",
+    "item_oid": "I.23",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.18",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "721949f1",
+    "question": "What is the type of clear you prefer?",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.24",
+    "item_oid": "I.24",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.23",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "9b7dd948",
+    "question": "What is the type of Low - E you prefer?",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.25",
+    "item_oid": "I.25",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.23",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "86d0ccf1",
+    "question": "Choose the type of Polycarb",
+    "option_a": "Twin Wall Polycarb",
+    "option_b": "Five Wall Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Twin Wall Polycarb",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.26",
+    "item_oid": "I.26",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.17",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "721fe5f8",
+    "question": "Choose the color of Twin Wall Polycarb",
+    "option_a": "Clear",
+    "option_b": "Opal",
+    "option_c": "Bronze",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Clear",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.27",
+    "item_oid": "I.27",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.26",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "a07377b2",
+    "question": "Choose the Roof Materials",
+    "option_a": "Glass",
+    "option_b": "Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.28",
+    "item_oid": "I.28",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.17",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "e8142156",
+    "question": "Choose the type of Glass for the Roof of your Greenhouse",
+    "option_a": "3mm Single Glass",
+    "option_b": "6mm Single Glass",
+    "option_c": "16mm Double Glass",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "3mm Single Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.29",
+    "item_oid": "I.29",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.28",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "68df4c31",
+    "question": "Do you want Casement Windows in your Greenhouse?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.200",
+    "item_oid": "I.200",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.29",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "1124760b",
+    "question": "Enter the Quantity",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.202",
+    "item_oid": "I.202",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.200",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "5dab407d",
+    "question": "Do you Want to Tint the Glass or Laminate it ?",
+    "option_a": "Tint",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tint",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.30",
+    "item_oid": "I.30",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.29",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "c933d4b3",
+    "question": "Choose the Tint Color",
+    "option_a": "Green",
+    "option_b": "Brown",
+    "option_c": "Gray ",
+    "option_d": "Custom",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Green",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.31",
+    "item_oid": "I.31",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.30",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "9ad66674",
+    "question": "Specify the color required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "text",
+    "explanation": "I.32",
+    "item_oid": "I.32",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.31",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "07b9c7c1",
+    "question": "What tint do you want on 6mm Single Glass for your Roof?",
+    "option_a": "Grey",
+    "option_b": "Green",
+    "option_c": "Bronze",
+    "option_d": "Clear",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Grey",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.33",
+    "item_oid": "I.33",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.29",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "55b8648b",
+    "question": "What configuration of 16mm Double Glass do you desire for your Roof?",
+    "option_a": "Clear",
+    "option_b": "Low-E",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Clear",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.34",
+    "item_oid": "I.34",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.29",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "9ee2974a",
+    "question": "What is the type of Clear you prefer in Roof ?",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.35",
+    "item_oid": "I.35",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.34",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "7dded530",
+    "question": "What is the type of Low - E you prefer in Roof ?",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.36",
+    "item_oid": "I.36",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.34",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "7b077762",
+    "question": "Choose the type of Polycarb for your Roof",
+    "option_a": "Twin Wall Polycarb",
+    "option_b": "Five Wall Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Twin Wall Polycarb",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.195",
+    "item_oid": "I.195",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.28",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "0fed53a9",
+    "question": "Choose the color of Twin Wall Polycarb",
+    "option_a": "Clear",
+    "option_b": "Opal",
+    "option_c": "Bronze",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Clear",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.196",
+    "item_oid": "I.196",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.195",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f80ca3dd",
+    "question": "Do you want to Customize the Wall Material for All Walls or each Wall individually?",
+    "option_a": "All Walls",
+    "option_b": "Customize each Wall",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "All Walls",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.37",
+    "item_oid": "I.37",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.17",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "a71e5da8",
+    "question": "Do you want to use Glass Glazing or Polycarb Glazing",
+    "option_a": "Glass",
+    "option_b": "Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.38",
+    "item_oid": "I.38",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.37",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b67c2014",
+    "question": "Choose the type of Glass Glazing preferred for all Walls",
+    "option_a": "3mm Single Glass",
+    "option_b": "6mm Single Glass",
+    "option_c": "16mm Double Glass",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "3mm Single Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.39",
+    "item_oid": "I.39",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.38",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f64dd8d9",
+    "question": "Do you want Casement Windows in your Greenhouse?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.203",
+    "item_oid": "I.203",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.39",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "8137bf8a",
+    "question": "Enter the Quantity",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.205",
+    "item_oid": "I.205",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.203",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "9ab64fb0",
+    "question": "Do you Want to Tint the Glass or Laminate it ?",
+    "option_a": "Tint",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tint",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.40",
+    "item_oid": "I.40",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.39",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "af706c45",
+    "question": "Choose the Tint Color",
+    "option_a": "Green",
+    "option_b": "Brown",
+    "option_c": "Gray",
+    "option_d": "Custom",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Green",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.41",
+    "item_oid": "I.41",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.40",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "a76df6eb",
+    "question": "Specify the color required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "text",
+    "explanation": "I.42",
+    "item_oid": "I.42",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.41",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "64405a94",
+    "question": "What tint do you want on 6mm Single Glass in All Walls?",
+    "option_a": "Grey",
+    "option_b": "Green",
+    "option_c": "Bronze",
+    "option_d": "Clear",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Grey",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.43",
+    "item_oid": "I.43",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.39",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "aecf270a",
+    "question": "What configuration of 16mm Double Glass do you desire for All Walls?",
+    "option_a": "Clear",
+    "option_b": "Low-E",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Clear",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.44",
+    "item_oid": "I.44",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.39",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "a2205c87",
+    "question": "Choose the type of Clear Double Glass you prefer in All Walls",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.45",
+    "item_oid": "I.45",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.44",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "84e718ee",
+    "question": "Choose the type of Low-E Double Glass you prefer in All Walls",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.46",
+    "item_oid": "I.46",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.44",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "2a02c131",
+    "question": "Choose the type of Polycarb desired in All Walls",
+    "option_a": "Twin Wall Polycarb",
+    "option_b": "Five Wall Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Twin Wall Polycarb",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.47",
+    "item_oid": "I.47",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.38",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "4226ef6a",
+    "question": "Choose the color of the Polycarb",
+    "option_a": "Opal",
+    "option_b": "Bronze",
+    "option_c": "Clear",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Opal",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.48",
+    "item_oid": "I.48",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.47",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "e1977382",
+    "question": "Which side of the wall would you like to customize?",
+    "option_a": "Left Side Wall",
+    "option_b": "Right Side Wall",
+    "option_c": "Left Gable Wall",
+    "option_d": "Right Gable Wall",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Left Side Wall",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "multiselect",
+    "explanation": "I.49",
+    "item_oid": "I.49",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.37",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "e12f8f9d",
+    "question": "Choose the type of Left Side Wall",
+    "option_a": "Glass",
+    "option_b": "Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.50",
+    "item_oid": "I.50",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.49",
+      "parent_value": ",1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "0d9e7053",
+    "question": "Choose the type of Glass in Left Side Wall",
+    "option_a": "3mm Single Glass",
+    "option_b": "6mm Single Glass",
+    "option_c": "16mm Double Glass",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "3mm Single Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.51",
+    "item_oid": "I.51",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.50",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "936a7fc3",
+    "question": "Do you want Casement Windows in your Greenhouse?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.206",
+    "item_oid": "I.206",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.51",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "e31999c9",
+    "question": "Enter the Quantity",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.208",
+    "item_oid": "I.208",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.206",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b911fc61",
+    "question": "Do you Want to Tint the Glass or Laminate it ?",
+    "option_a": "Tint",
+    "option_b": "Laminate.",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tint",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.52",
+    "item_oid": "I.52",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.51",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "02638cb4",
+    "question": "Choose the Tint Color",
+    "option_a": "Green",
+    "option_b": "Brown",
+    "option_c": "Gray",
+    "option_d": "Custom",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Green",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.53",
+    "item_oid": "I.53",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.52",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "0a88d5dd",
+    "question": "Specify the color required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "text",
+    "explanation": "I.191",
+    "item_oid": "I.191",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.53",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "caccdb58",
+    "question": "What tint do you want on 6mm Single Glass in Left Side Wall?",
+    "option_a": "Grey",
+    "option_b": "Green",
+    "option_c": "Bronze",
+    "option_d": "Clear",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Grey",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.54",
+    "item_oid": "I.54",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.51",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "5cffc1e9",
+    "question": "What configuration of 16mm Double Glass you want for Left Side Wall?",
+    "option_a": "Clear",
+    "option_b": "Low-E",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Clear",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.55",
+    "item_oid": "I.55",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.51",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "9b4e03b2",
+    "question": "Choose the type of Clear Double Glass you prefer in Left Side Wall",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.56",
+    "item_oid": "I.56",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.55",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "cf76c532",
+    "question": "Choose the type of Low - E Double Glass you prefer in Left Side Wall",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.57",
+    "item_oid": "I.57",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.55",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "9a6aafe0",
+    "question": "Choose the type of Polycarb in Left Side Wall",
+    "option_a": "Twin Wall Polycarb",
+    "option_b": "Five Wall Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Twin Wall Polycarb",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.58",
+    "item_oid": "I.58",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.50",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "8316fe69",
+    "question": "Choose the color of the Polycarb",
+    "option_a": "Opal",
+    "option_b": "Bronze",
+    "option_c": "Clear",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Opal",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.59",
+    "item_oid": "I.59",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.58",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f1f2fd21",
+    "question": "Choose the type of Right Side Wall",
+    "option_a": "Glass",
+    "option_b": "Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.60",
+    "item_oid": "I.60",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.49",
+      "parent_value": ",2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "905fbf88",
+    "question": "Choose the type of Glass in Right Side Wall",
+    "option_a": "3mm Single Glass",
+    "option_b": "6mm Single Glass",
+    "option_c": "16mm Double Glass",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "3mm Single Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.61",
+    "item_oid": "I.61",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.60",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "36dd9f7a",
+    "question": "Do you want Casement Windows in your Greenhouse?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.209",
+    "item_oid": "I.209",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.61",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "9333963a",
+    "question": "Enter the Quantity",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.211",
+    "item_oid": "I.211",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.209",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "14737f42",
+    "question": "Do you Want to Tint the Glass or Laminate it?",
+    "option_a": "Tint",
+    "option_b": "Laminate.",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tint",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.62",
+    "item_oid": "I.62",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.61",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "54e4dfb0",
+    "question": "Choose the Tint Color",
+    "option_a": "Green",
+    "option_b": "Brown",
+    "option_c": "Gray",
+    "option_d": "Custom",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Green",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.63",
+    "item_oid": "I.63",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.62",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "a3b5c24f",
+    "question": "Specify the color required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "text",
+    "explanation": "I.64",
+    "item_oid": "I.64",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.63",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "bc52a532",
+    "question": "What tint do you want on 6mm Single Glass in Right Side Wall?",
+    "option_a": "Grey",
+    "option_b": "Green",
+    "option_c": "Bronze",
+    "option_d": "Clear",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Grey",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.65",
+    "item_oid": "I.65",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.61",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "6d804530",
+    "question": "Choose the configuration of 16mm Double Glass in Right Side Wall",
+    "option_a": "Clear",
+    "option_b": "Low-E",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Clear",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.66",
+    "item_oid": "I.66",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.61",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "921de67b",
+    "question": "Choose the type of clear double glass you prefer in Right Side Wall",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.67",
+    "item_oid": "I.67",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.66",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "ec607e31",
+    "question": "Choose the type of Low -E double glass you prefer in Right Side Wall",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.68",
+    "item_oid": "I.68",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.66",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "61bfa8f4",
+    "question": "Choose the type of Polycarb in Right Side Wall",
+    "option_a": "Twin Wall Polycarb",
+    "option_b": "Five Wall Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Twin Wall Polycarb",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.69",
+    "item_oid": "I.69",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.60",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "6eafc4eb",
+    "question": "Choose the color of the Polycarb",
+    "option_a": "Opal",
+    "option_b": " Bronze",
+    "option_c": " Clear",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Opal",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.70",
+    "item_oid": "I.70",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.69",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "1d868b43",
+    "question": "Choose the type of Left Gable Wall",
+    "option_a": "Glass",
+    "option_b": "Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.71",
+    "item_oid": "I.71",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.49",
+      "parent_value": ",3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f3e2c2ea",
+    "question": "Choose the type of Glass in Left Gable Wall",
+    "option_a": "3mm Single Glass",
+    "option_b": "6mm Single Glass",
+    "option_c": "16mm Double Glass",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "3mm Single Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.72",
+    "item_oid": "I.72",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.71",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "5ae9fbc5",
+    "question": "Do you want Casement Windows in your Greenhouse?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.212",
+    "item_oid": "I.212",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.72",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "fb1ffd20",
+    "question": "Enter the Quantity",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.214",
+    "item_oid": "I.214",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.212",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "5bd12ddd",
+    "question": "Do you Want to Tint the Glass or Laminate it ?",
+    "option_a": "Tint",
+    "option_b": "Laminate.",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tint",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.73",
+    "item_oid": "I.73",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.72",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "bba2b67c",
+    "question": "Choose the Tint Color",
+    "option_a": "Green",
+    "option_b": "Brown",
+    "option_c": "Gray",
+    "option_d": "Custom",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Green",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.74",
+    "item_oid": "I.74",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.73",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "7af6bb6d",
+    "question": "Specify the color required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "text",
+    "explanation": "I.75",
+    "item_oid": "I.75",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.74",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "846c25cc",
+    "question": "What tint do you want on 6mm Single Glass in Left Gable Wall?",
+    "option_a": "Grey",
+    "option_b": "Green",
+    "option_c": "Bronze",
+    "option_d": "Clear",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Grey",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.76",
+    "item_oid": "I.76",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.72",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "63e420ee",
+    "question": "What configuration of 16mm Double Glass do you desire for Left Gable Wall?",
+    "option_a": "Clear",
+    "option_b": "Low-E",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Clear",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.77",
+    "item_oid": "I.77",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.72",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "937aa6ea",
+    "question": "Choose the type of clear double glass you prefer in Left Gable Wall",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.78",
+    "item_oid": "I.78",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.77",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "d479cbd3",
+    "question": "Choose the type of Low - E double glass you prefer in Left Gable Wall",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.79",
+    "item_oid": "I.79",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.77",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "7f338c05",
+    "question": "Choose the type of Polycarb in Left Gable Wall",
+    "option_a": "Twin Wall Polycarb",
+    "option_b": "Five Wall Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Twin Wall Polycarb",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.80",
+    "item_oid": "I.80",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.71",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "116a1741",
+    "question": "Choose the color of the Polycarb",
+    "option_a": "Opal",
+    "option_b": "Bronze",
+    "option_c": "Clear",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Opal",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.81",
+    "item_oid": "I.81",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.80",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "c64ec53a",
+    "question": "Choose the type of Right Gable Wall",
+    "option_a": "Glass",
+    "option_b": "Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.82",
+    "item_oid": "I.82",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.49",
+      "parent_value": ",4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "5c8e50dd",
+    "question": "Choose the type of Glass in Right Gable Wall",
+    "option_a": "3mm Single Glass",
+    "option_b": " 6mm Single Glass",
+    "option_c": "16mm Double Glass",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "3mm Single Glass",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.83",
+    "item_oid": "I.83",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.82",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "1d1ad89a",
+    "question": "Do you want Casement Windows in your Greenhouse?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.215",
+    "item_oid": "I.215",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.83",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "a27e2074",
+    "question": "Enter the Quantity",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.217",
+    "item_oid": "I.217",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.215",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "4878583e",
+    "question": "Do you Want to Tint the Glass or Laminate it?",
+    "option_a": "Tint",
+    "option_b": " Laminate.",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tint",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.84",
+    "item_oid": "I.84",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.83",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "c1f1dab7",
+    "question": "Choose the Tint Color",
+    "option_a": "Green",
+    "option_b": "Brown",
+    "option_c": "Grey",
+    "option_d": "Custom",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Green",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.85",
+    "item_oid": "I.85",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.84",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "fc568ae6",
+    "question": "Specify the color required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "text",
+    "explanation": "I.86",
+    "item_oid": "I.86",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.85",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "999557fb",
+    "question": "What tint do you want on 6mm Single Glass in Right Gable Wall?",
+    "option_a": "Grey",
+    "option_b": "Green",
+    "option_c": "Bronze",
+    "option_d": "Clear",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Grey",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.87",
+    "item_oid": "I.87",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.83",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f0fbb241",
+    "question": "Choose the configuration of 16mm Double Glass in Right Gable Wall",
+    "option_a": "Clear",
+    "option_b": "Low-E",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Clear",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.88",
+    "item_oid": "I.88",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.83",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "16cbc62d",
+    "question": "Choose the type of Clear Double Glass you prefer in Right Gable Wall",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.89",
+    "item_oid": "I.89",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.88",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "577a84f9",
+    "question": "Choose the type of Low - E Double Glass you prefer in Right Gable Wall",
+    "option_a": "Tempered",
+    "option_b": "Laminate",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Tempered",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.90",
+    "item_oid": "I.90",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.88",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "24f06c5f",
+    "question": "Choose the type of Polycarb in Right Gable Wall",
+    "option_a": "Twin Wall Polycarb",
+    "option_b": "Five Wall Polycarb",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Twin Wall Polycarb",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.91",
+    "item_oid": "I.91",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.82",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "0765218a",
+    "question": "Choose the color of the Polycarb",
+    "option_a": "Opal",
+    "option_b": "Bronze",
+    "option_c": "Clear",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Opal",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.92",
+    "item_oid": "I.92",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.91",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "ade76b3e",
+    "question": "Enter the number of Trusses Required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.93",
+    "item_oid": "I.93",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "5a3a5d8e",
+    "question": "Do you want doors for your greenhouse?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.94",
+    "item_oid": "I.94",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "4a5eff69",
+    "question": "Enter the desired number of Doors.",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.95",
+    "item_oid": "I.95",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.94",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "c890bfab",
+    "question": "Do you want Casement Windows in your Greenhouse?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.104",
+    "item_oid": "I.104",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.18",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "cc56cc63",
+    "question": "Enter the Quantity",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.105",
+    "item_oid": "I.105",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.104",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "43b6077d",
+    "question": "Choose the type of Side Vents required",
+    "option_a": "Awning Vents",
+    "option_b": "Glass Louvre Vents (Only available in Single Glass Configuration)",
+    "option_c": "Continuous Side Vent",
+    "option_d": "None",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "5",
+      "option_c": "6",
+      "option_d": "7"
+    },
+    "answer": "Awning Vents",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.106",
+    "item_oid": "I.106",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "937a39c9",
+    "question": "Enter the quantity required for the awning vents",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.107",
+    "item_oid": "I.107",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "1ace9d27",
+    "question": "Enter the quantity required for the automated wax opener",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.178",
+    "item_oid": "I.178",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "7503577d",
+    "question": "Enter the quantity required for the manual hand crank",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.179",
+    "item_oid": "I.179",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b14bbe7c",
+    "question": "Enter the quantity required for the glass louvre vents",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.180",
+    "item_oid": "I.180",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "5",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b45c34e4",
+    "question": "What type of opener?",
+    "option_a": "Electric Motorized Opener",
+    "option_b": "Automated Wax Opener",
+    "option_c": "Manual Hand Crank Opener",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Electric Motorized Opener",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.171",
+    "item_oid": "I.171",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b68e9439",
+    "question": "Do you want screen for this vent?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.172",
+    "item_oid": "I.172",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "396fa576",
+    "question": "Choose the Greenhouse Control Box required",
+    "option_a": "Basic Control Box",
+    "option_b": "Mid-Range Control Box",
+    "option_c": "Advanced Control Box",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Basic Control Box",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.184",
+    "item_oid": "I.184",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "2d3b2a94",
+    "question": "Enter the quantity required for the electric motorized opener",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.108",
+    "item_oid": "I.108",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "9cd4f68e",
+    "question": "Do you want screen for this vent?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.173",
+    "item_oid": "I.173",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "fe8d0c52",
+    "question": "Do you want screen for this vent?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.174",
+    "item_oid": "I.174",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f222bdbf",
+    "question": "Do you want screen for this vent?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.175",
+    "item_oid": "I.175",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "1c2f5427",
+    "question": "Do you want screen for this vent?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.176",
+    "item_oid": "I.176",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "5",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "0f4f2aba",
+    "question": "Choose the type of Continuous side vent",
+    "option_a": "Electric Side Vent",
+    "option_b": "Manual Side Vent",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Electric Side Vent",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.182",
+    "item_oid": "I.182",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "6",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "06d432f1",
+    "question": "Choose Greenhouse Control Box",
+    "option_a": "Basic Control Box",
+    "option_b": "Mid-Range Control Box",
+    "option_c": "Advanced Control Box",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Basic Control Box",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.183",
+    "item_oid": "I.183",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.182",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "6211cd24",
+    "question": "Do you want screen for this vent?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.177",
+    "item_oid": "I.177",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "6",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "52134400",
+    "question": "Enter the quantity required for the continuous side vent",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.181",
+    "item_oid": "I.181",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.106",
+      "parent_value": "6",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "71129ac7",
+    "question": "Choose the type of Roof Vents required",
+    "option_a": "Electric Ridge Vent",
+    "option_b": "Automatic Ridge Vents",
+    "option_c": "Manual Hand Crank Ridge Vents",
+    "option_d": "Continuous Ridge Vent",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Electric Ridge Vent",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.109",
+    "item_oid": "I.109",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "e468cb07",
+    "question": "Enter the quantity required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.110",
+    "item_oid": "I.110",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.109",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "13ef78c6",
+    "question": "Choose the Greenhouse Control Box required",
+    "option_a": "Basic Control Box",
+    "option_b": "Mid-Range Control Box",
+    "option_c": "Advanced Control Box",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Basic Control Box",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.111",
+    "item_oid": "I.111",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.109",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b762f5e0",
+    "question": "Do you want screen for this vent?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.235",
+    "item_oid": "I.235",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.109",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "40f8675b",
+    "question": "Enter the quantity required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.192",
+    "item_oid": "I.192",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.109",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "c88c364e",
+    "question": "Do you want screen for this vent?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.236",
+    "item_oid": "I.236",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.109",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "10d10315",
+    "question": "Enter the quantity required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.141",
+    "item_oid": "I.141",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.109",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "680ef106",
+    "question": "Do you want screen for this vent?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.237",
+    "item_oid": "I.237",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.109",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "db824898",
+    "question": "Choose the type of Continuous Ridge Vent",
+    "option_a": "Electric Continuous Ridge Vent",
+    "option_b": "Manual Continuous Ridge Vent",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Electric Continuous Ridge Vent",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.143",
+    "item_oid": "I.143",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.109",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "65e200a3",
+    "question": "Choose Greenhouse Control Box",
+    "option_a": "Basic Control Box",
+    "option_b": "Mid-Range Control Box",
+    "option_c": "Advanced Control Box",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Basic Control Box",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.300",
+    "item_oid": "I.300",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.143",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "c900c26a",
+    "question": "Enter the quantity required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.144",
+    "item_oid": "I.144",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.143",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "ad825832",
+    "question": "Do you want screen for this vent?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.238",
+    "item_oid": "I.238",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.109",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "959c0acb",
+    "question": "Enter the quantity required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.145",
+    "item_oid": "I.145",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.143",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "16002d80",
+    "question": "Do you want an Exhaust Fan Package for your Greenhouse (includes intake shutters)?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.112",
+    "item_oid": "I.112",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "d8319893",
+    "question": "Choose the size of Exhaust Fan Package",
+    "option_a": "10\" Fan Package (Fan Only)",
+    "option_b": "14\" Fan Package (Fan Only)",
+    "option_c": "18\" Fan Package (Fan Only)",
+    "option_d": "10\" Exhaust Fan with Intake Shutters",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "10\" Fan Package (Fan Only)",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.113",
+    "item_oid": "I.113",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.112",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "efd5f943",
+    "question": "Do you want additional Exhaust Fans?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.239",
+    "item_oid": "I.239",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.112",
+      "parent_value": "No",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "89ba6b1d",
+    "question": "Select the size of additional Exhaust fans",
+    "option_a": "10\" Fan Package (Fan Only)",
+    "option_b": "14\" Fan Package (Fan Only)",
+    "option_c": "18\" Fan Package (Fan Only)",
+    "option_d": "10\" Exhaust Fan with Intake Shutters",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "10\" Fan Package (Fan Only)",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.240",
+    "item_oid": "I.240",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.239",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b11dc5ea",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.241",
+    "item_oid": "I.241",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.240",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "e097a6de",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.242",
+    "item_oid": "I.242",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.240",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "a269c1c0",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.243",
+    "item_oid": "I.243",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.240",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "d4b8565f",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.244",
+    "item_oid": "I.244",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.240",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "4d71c543",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.245",
+    "item_oid": "I.245",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.240",
+      "parent_value": "5",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "7e8035db",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.246",
+    "item_oid": "I.246",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.240",
+      "parent_value": "6",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "4178128c",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.250",
+    "item_oid": "I.250",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.240",
+      "parent_value": "7",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "1df090c4",
+    "question": "Do you want additional Exhaust Fans?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.218",
+    "item_oid": "I.218",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.113",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "3d87668e",
+    "question": "Select the size of additional Exhaust fans",
+    "option_a": "10\" Fan Package (Fan Only)",
+    "option_b": "14\" Fan Package (Fan Only)",
+    "option_c": "18\" Fan Package (Fan Only)",
+    "option_d": "10\" Exhaust Fan with Intake Shutters",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "10\" Fan Package (Fan Only)",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.219",
+    "item_oid": "I.219",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.218",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "fb24779b",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.220",
+    "item_oid": "I.220",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.219",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "99c5d449",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.221",
+    "item_oid": "I.221",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.219",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "2a7a9053",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.222",
+    "item_oid": "I.222",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.219",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f79eeb0c",
+    "question": "Do you want additional Exhaust Fans?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.223",
+    "item_oid": "I.223",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.113",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "dc2ea759",
+    "question": "Do you want additional Exhaust Fans?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.247",
+    "item_oid": "I.247",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.113",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b8b84228",
+    "question": "Select the size of additional Exhaust fans",
+    "option_a": "10\" Fan Package (Fan Only)",
+    "option_b": "14\" Fan Package (Fan Only)",
+    "option_c": "18\" Fan Package (Fan Only)",
+    "option_d": "10\" Exhaust Fan with Intake Shutters",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "10\" Fan Package (Fan Only)",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.251",
+    "item_oid": "I.251",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.247",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "6d1ff66d",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.252",
+    "item_oid": "I.252",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.251",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "34a4d77b",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.257",
+    "item_oid": "I.257",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.251",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "3fdf108c",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.258",
+    "item_oid": "I.258",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.251",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "cace6fb2",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.259",
+    "item_oid": "I.259",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.251",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f9685515",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.260",
+    "item_oid": "I.260",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.251",
+      "parent_value": "5",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "aca20700",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.261",
+    "item_oid": "I.261",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.251",
+      "parent_value": "6",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "6a6200ed",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.262",
+    "item_oid": "I.262",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.251",
+      "parent_value": "7",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "994dd2b3",
+    "question": "Do you want additional Exhaust Fans?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.248",
+    "item_oid": "I.248",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.113",
+      "parent_value": "5",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "3c8dbcde",
+    "question": "Select the size of additional Exhaust fans",
+    "option_a": "10\" Fan Package (Fan Only)",
+    "option_b": "14\" Fan Package (Fan Only)",
+    "option_c": "18\" Fan Package (Fan Only)",
+    "option_d": "10\" Exhaust Fan with Intake Shutters",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "10\" Fan Package (Fan Only)",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.253",
+    "item_oid": "I.253",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.248",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "aa6c6e0a",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.254",
+    "item_oid": "I.254",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.253",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "600c060c",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.263",
+    "item_oid": "I.263",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.253",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "066558c6",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.264",
+    "item_oid": "I.264",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.253",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "17e4d9c8",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.265",
+    "item_oid": "I.265",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.253",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "01b71035",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.266",
+    "item_oid": "I.266",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.253",
+      "parent_value": "5",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "3e3a871d",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.267",
+    "item_oid": "I.267",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.253",
+      "parent_value": "6",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "5c9cf677",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.268",
+    "item_oid": "I.268",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.253",
+      "parent_value": "7",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "30adf898",
+    "question": "Do you want additional Exhaust Fans?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.249",
+    "item_oid": "I.249",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.113",
+      "parent_value": "6",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f89eaa99",
+    "question": "Select the size of additional Exhaust fans",
+    "option_a": "10\" Fan Package (Fan Only)",
+    "option_b": "14\" Fan Package (Fan Only)",
+    "option_c": "18\" Fan Package (Fan Only)",
+    "option_d": "10\" Exhaust Fan with Intake Shutters",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "10\" Fan Package (Fan Only)",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.269",
+    "item_oid": "I.269",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.249",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "14b3842a",
+    "question": "Select the size of additional Exhaust fans",
+    "option_a": "10\" Fan Package (Fan Only)",
+    "option_b": "14\" Fan Package (Fan Only)",
+    "option_c": "18\" Fan Package (Fan Only)",
+    "option_d": "10\" Exhaust Fan with Intake Shutters",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "10\" Fan Package (Fan Only)",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.270",
+    "item_oid": "I.270",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.269",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "376b2865",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.271",
+    "item_oid": "I.271",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.269",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "53f19e45",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.272",
+    "item_oid": "I.272",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.269",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b90219ea",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.273",
+    "item_oid": "I.273",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.269",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "788180e8",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.274",
+    "item_oid": "I.274",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.269",
+      "parent_value": "5",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "db618f96",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.275",
+    "item_oid": "I.275",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.269",
+      "parent_value": "6",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b6077013",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.276",
+    "item_oid": "I.276",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.269",
+      "parent_value": "7",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b321ecb9",
+    "question": "Total Vent Quantity (Derived)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.277",
+    "item_oid": "I.277",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "1d836b74",
+    "question": "Base Angle Quantity (Derived)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.278",
+    "item_oid": "I.278",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "ffacbf2d",
+    "question": "Ridgecap Quantity (Derived)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.279",
+    "item_oid": "I.279",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "57b010de",
+    "question": "Sidewall Square Footage (Derived)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.286",
+    "item_oid": "I.286",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "22d52096",
+    "question": "Gable Square Footage (Derived)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.287",
+    "item_oid": "I.287",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "f6e8d92c",
+    "question": "Roof Square Footage (Derived)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.288",
+    "item_oid": "I.288",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "e5e46e38",
+    "question": "Do you want additional Exhaust Fans?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.290",
+    "item_oid": "I.290",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.113",
+      "parent_value": "7",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "89aaddc2",
+    "question": "Select the size of additional Exhaust fans",
+    "option_a": "10\" Fan Package (Fan Only)",
+    "option_b": "14\" Fan Package (Fan Only)",
+    "option_c": "18\" Fan Package (Fan Only)",
+    "option_d": "10\" Exhaust Fan with Intake Shutters",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "10\" Fan Package (Fan Only)",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.291",
+    "item_oid": "I.291",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "d66bb8f7",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.292",
+    "item_oid": "I.292",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.291",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b05d523a",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.293",
+    "item_oid": "I.293",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.291",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "64b20b1f",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.294",
+    "item_oid": "I.294",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.291",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "961b3513",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.295",
+    "item_oid": "I.295",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.291",
+      "parent_value": "4",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "4be751ae",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.296",
+    "item_oid": "I.296",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.291",
+      "parent_value": "5",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "c66790c4",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.297",
+    "item_oid": "I.297",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.291",
+      "parent_value": "6",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "42ea9f3f",
+    "question": "Select the size of additional Exhaust fans",
+    "option_a": "10\" Fan Package (Fan Only)",
+    "option_b": "14\" Fan Package (Fan Only)",
+    "option_c": "18\" Fan Package (Fan Only)",
+    "option_d": "10\" Exhaust Fan with Intake Shutters",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "10\" Fan Package (Fan Only)",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.224",
+    "item_oid": "I.224",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.223",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "827cc358",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.225",
+    "item_oid": "I.225",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.224",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "3b7bcc62",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.226",
+    "item_oid": "I.226",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.224",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "be15d941",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.227",
+    "item_oid": "I.227",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.224",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "14c33937",
+    "question": "Do you want additional Exhaust Fans?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.114",
+    "item_oid": "I.114",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.113",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "e53c5fa7",
+    "question": "Select the size of additional Exhaust fans",
+    "option_a": "10\" Fan Package (Fan Only)",
+    "option_b": "14\" Fan Package (Fan Only)",
+    "option_c": "18\" Fan Package (Fan Only)",
+    "option_d": "10\" Exhaust Fan with Intake Shutters",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "10\" Fan Package (Fan Only)",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.115",
+    "item_oid": "I.115",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.114",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "0aa96795",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.116",
+    "item_oid": "I.116",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.115",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f3807e13",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.117",
+    "item_oid": "I.117",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.115",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "28ea12ae",
+    "question": "Enter the Quantity (Optional)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.118",
+    "item_oid": "I.118",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.115",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "494ade09",
+    "question": "Do you want Internal Air Circulation",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.119",
+    "item_oid": "I.119",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "dcab3cbf",
+    "question": "Do you want any hanging brackets?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.233",
+    "item_oid": "I.233",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.119",
+      "parent_value": "No",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "cef56930",
+    "question": "Enter the quantity required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.234",
+    "item_oid": "I.234",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.233",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "18e2029f",
+    "question": "Choose the type of Internal Air Circulation Fan",
+    "option_a": "Cross Circulation Fans",
+    "option_b": "Ceiling Mounted Fans",
+    "option_c": "Only Brackets",
+    "option_d": "None",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Cross Circulation Fans",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "multiselect",
+    "explanation": "I.120",
+    "item_oid": "I.120",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.119",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "1173ac71",
+    "question": "Enter the desired number of Cross Circulation Fans",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.121",
+    "item_oid": "I.121",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.120",
+      "parent_value": ",1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "86084a09",
+    "question": "Enter the desired number of Ceiling Mounted Fans",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.122",
+    "item_oid": "I.122",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.120",
+      "parent_value": ",2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f9ff4c10",
+    "question": " Enter the desired number of Brackets",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.123",
+    "item_oid": "I.123",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.120",
+      "parent_value": ",3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "454793cd",
+    "question": "Do you want a Heater for your Greenhouse?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "boolean",
+    "explanation": "I.124",
+    "item_oid": "I.124",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "c271ae34",
+    "question": "Select the type of Heater preferred for your Greenhouse",
+    "option_a": "Electric Heater",
+    "option_b": " Gas Heater",
+    "option_c": "None",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Electric Heater",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.125",
+    "item_oid": "I.125",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.124",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "6e2d1fe9",
+    "question": "Select the type of Gas Heaters for your Greenhouse",
+    "option_a": "Liquid Propane Type (Penetration Panel mandatory if Glass Glazing is Used)",
+    "option_b": "Natural Gas Type (Penetration Panel mandatory if Glass Glazing is Used)",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Liquid Propane Type (Penetration Panel mandatory if Glass Glazing is Used)",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.126",
+    "item_oid": "I.126",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.125",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "467cc3a2",
+    "question": "Please select any related components required",
+    "option_a": "Penetration Panel",
+    "option_b": "Heater Bracket",
+    "option_c": "None",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Penetration Panel",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "singleselect",
+    "explanation": "I.127",
+    "item_oid": "I.127",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.124",
+      "parent_value": "No",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "9d3d3354",
+    "question": "Enter the quantity required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.128",
+    "item_oid": "I.128",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.127",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "e8d59159",
+    "question": "Enter the quantity required",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "integer",
+    "explanation": "I.129",
+    "item_oid": "I.129",
+    "group_oid": "IG.1",
+    "condition": {
+      "parent_item_oid": "I.127",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "4ffb2395",
+    "question": "Customizations (May alter the cost of the Greenhouse significantly)",
+    "option_a": "Vestibules (Reverse Gable Entry)",
+    "option_b": "Decorative Cupolas",
+    "option_c": "Hipped Roof",
+    "option_d": "Partition Walls",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3",
+      "option_d": "4"
+    },
+    "answer": "Vestibules (Reverse Gable Entry)",
+    "difficulty": "",
+    "topic": "Standard Greenhouse",
+    "tags": "multiselect",
+    "explanation": "I.130",
+    "item_oid": "I.130",
+    "group_oid": "IG.1",
+    "condition": null
+  },
+  {
+    "id": "8123a580",
+    "question": "Enter the type of doors you want for your Greenhouse",
+    "option_a": "Storefront Door",
+    "option_b": "Sliding Doors",
+    "option_c": "Storm Door",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Storefront Door",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.96",
+    "item_oid": "I.96",
+    "group_oid": "IG.2",
+    "condition": null
+  },
+  {
+    "id": "3747e164",
+    "question": "Select the type of Storefront Door you prefer",
+    "option_a": "Single Door",
+    "option_b": "Double-Wide Door",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Single Door",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.97",
+    "item_oid": "I.97",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.96",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "6b5ea969",
+    "question": "Select the size of Single Storefront Door",
+    "option_a": "Standard Size (36\"x84\")",
+    "option_b": "Custom UnderSize",
+    "option_c": "Custom OverSize",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Standard Size (36\"x84\")",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.98",
+    "item_oid": "I.98",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.97",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "dbb56f02",
+    "question": "Enter the Custom length of Single Storefront Door",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "integer",
+    "explanation": "I.99",
+    "item_oid": "I.99",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.98",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "32fc522e",
+    "question": "Enter the Custom height of Single Storefront Door",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "integer",
+    "explanation": "I.150",
+    "item_oid": "I.150",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.98",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f9ee4474",
+    "question": "Enter the Custom height of Single Storefront Door",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "integer",
+    "explanation": "I.151",
+    "item_oid": "I.151",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.98",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "92f0c638",
+    "question": "Enter the Custom length of Single Storefront Door",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "integer",
+    "explanation": "I.152",
+    "item_oid": "I.152",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.98",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "4a5fab67",
+    "question": "Select the Hinge Location for Single Storefront Door",
+    "option_a": "Left Hinge",
+    "option_b": "Right Hinge",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Left Hinge",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.149",
+    "item_oid": "I.149",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.97",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "e44f3a8d",
+    "question": "Select the size of Double-Wide Storefront Door",
+    "option_a": "Standard Size (72\"x84\")",
+    "option_b": "Custom OverSize",
+    "option_c": "Custom UnderSize",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2",
+      "option_c": "3"
+    },
+    "answer": "Standard Size (72\"x84\")",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.154",
+    "item_oid": "I.154",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.97",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "ffd49b3f",
+    "question": "Enter the Custom length of Double-Wide Storefront Door",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "integer",
+    "explanation": "I.155",
+    "item_oid": "I.155",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.154",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "ce40e614",
+    "question": "Enter the Custom height of Double-Wide Storefront Door",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "integer",
+    "explanation": "I.156",
+    "item_oid": "I.156",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.154",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "2daf576b",
+    "question": "Enter the Custom length of Double-Wide Storefront Door",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "integer",
+    "explanation": "I.157",
+    "item_oid": "I.157",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.154",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "acdad42f",
+    "question": "Enter the Custom height of Double-Wide Storefront Door",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "integer",
+    "explanation": "I.158",
+    "item_oid": "I.158",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.154",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "0b0b77cf",
+    "question": "Select the Active Door Leaf for Double-Wide Storefront Door",
+    "option_a": "Left Active",
+    "option_b": "Right Active",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Left Active",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.164",
+    "item_oid": "I.164",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.97",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "833de3ec",
+    "question": "Select the type of Sliding Door you prefer",
+    "option_a": "Multi-pane sliding (4)",
+    "option_b": "Multi-pane sliding (6)",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Multi-pane sliding (4)",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.100",
+    "item_oid": "I.100",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.96",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "55be89a1",
+    "question": "Enter the Quantity of Doors",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "integer",
+    "explanation": "I.101",
+    "item_oid": "I.101",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.100",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f87fa65a",
+    "question": "Enter the Quantity of Doors",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "integer",
+    "explanation": "I.102",
+    "item_oid": "I.102",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.100",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "42869039",
+    "question": "Select the type of Storm Door",
+    "option_a": "Single Storm Door",
+    "option_b": "Double Storm Door",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Single Storm Door",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.153",
+    "item_oid": "I.153",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.96",
+      "parent_value": "3",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "54d00fb0",
+    "question": "Do you want panel?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.165",
+    "item_oid": "I.165",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.153",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "329d899a",
+    "question": "Select the Hinge Location for Single storm Door",
+    "option_a": "Left Hinge",
+    "option_b": "Right Hinge",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Left Hinge",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.166",
+    "item_oid": "I.166",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.153",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "29dd794c",
+    "question": "Select the size of Double-Wide Storm Door",
+    "option_a": "54x76",
+    "option_b": "64x76",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "54x76",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.167",
+    "item_oid": "I.167",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.153",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "0852b837",
+    "question": "Do you want panel?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.168",
+    "item_oid": "I.168",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.167",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "bcb2dfcd",
+    "question": "Do you want panel?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.169",
+    "item_oid": "I.169",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.167",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "b90f7040",
+    "question": "Select the Active Door Leaf for Double-Wide Storefront Door",
+    "option_a": "Left Active",
+    "option_b": "Right Active",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Left Active",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.170",
+    "item_oid": "I.170",
+    "group_oid": "IG.2",
+    "condition": {
+      "parent_item_oid": "I.153",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "35e1faa4",
+    "question": "Choose the location of the door",
+    "option_a": "Gable",
+    "option_b": "Sidewall",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Gable",
+    "difficulty": "",
+    "topic": "Door",
+    "tags": "singleselect",
+    "explanation": "I.103",
+    "item_oid": "I.103",
+    "group_oid": "IG.2",
+    "condition": null
+  },
+  {
+    "id": "c5516b1f",
+    "question": "Do you want Ridge Cresting on your Greenhouse",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "boolean",
+    "explanation": "I.131",
+    "item_oid": "I.131",
+    "group_oid": "IG.3",
+    "condition": null
+  },
+  {
+    "id": "813ac0f7",
+    "question": "What type of Ridge Cresting do you want?",
+    "option_a": "Ridge Cresting with Finials",
+    "option_b": "Only Finials",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Ridge Cresting with Finials",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "singleselect",
+    "explanation": "I.132",
+    "item_oid": "I.132",
+    "group_oid": "IG.3",
+    "condition": {
+      "parent_item_oid": "I.131",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "6a3b6e02",
+    "question": "Do you want Decorative Pressure Caps?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "boolean",
+    "explanation": "I.133",
+    "item_oid": "I.133",
+    "group_oid": "IG.3",
+    "condition": null
+  },
+  {
+    "id": "d582cc47",
+    "question": "Do you want Gutters?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "boolean",
+    "explanation": "I.134",
+    "item_oid": "I.134",
+    "group_oid": "IG.3",
+    "condition": null
+  },
+  {
+    "id": "447eaeca",
+    "question": "Select the type of Gutters",
+    "option_a": "Decorative Gutters",
+    "option_b": "Tube Gutters",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Decorative Gutters",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "singleselect",
+    "explanation": "I.228",
+    "item_oid": "I.228",
+    "group_oid": "IG.3",
+    "condition": {
+      "parent_item_oid": "I.134",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "765fcd09",
+    "question": "Select the type of Decorative gutters you require",
+    "option_a": "Side Wall Gutters",
+    "option_b": "Wrap around Gutters",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Side Wall Gutters",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "singleselect",
+    "explanation": "I.135",
+    "item_oid": "I.135",
+    "group_oid": "IG.3",
+    "condition": {
+      "parent_item_oid": "I.228",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "132c6db7",
+    "question": "Do you want to upgrade to Double Stacked Side Walled Gutters?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "boolean",
+    "explanation": "I.136",
+    "item_oid": "I.136",
+    "group_oid": "IG.3",
+    "condition": {
+      "parent_item_oid": "I.135",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "a07cf7d3",
+    "question": "Do you want to upgrade to Double Stacked Wrap around Gutters?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "boolean",
+    "explanation": "I.137",
+    "item_oid": "I.137",
+    "group_oid": "IG.3",
+    "condition": {
+      "parent_item_oid": "I.135",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "dd0b0776",
+    "question": "Do you want Tube Gutters?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "boolean",
+    "explanation": "I.138",
+    "item_oid": "I.138",
+    "group_oid": "IG.3",
+    "condition": {
+      "parent_item_oid": "I.228",
+      "parent_value": "2",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "44a3c21e",
+    "question": "What type of Tube Gutters do you want?",
+    "option_a": "Side Wall Gutters",
+    "option_b": "Wrap Around Gutters",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Side Wall Gutters",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "singleselect",
+    "explanation": "I.139",
+    "item_oid": "I.139",
+    "group_oid": "IG.3",
+    "condition": {
+      "parent_item_oid": "I.138",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "3b03dfcf",
+    "question": "Do you want Base Panels (Only applicable if you don't have Kneewalls)",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "boolean",
+    "explanation": "I.140",
+    "item_oid": "I.140",
+    "group_oid": "IG.3",
+    "condition": null
+  },
+  {
+    "id": "df17f0c9",
+    "question": "Enter the preffered height of Base Panels",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "integer",
+    "explanation": "I.301",
+    "item_oid": "I.301",
+    "group_oid": "IG.3",
+    "condition": {
+      "parent_item_oid": "I.140",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f8393a32",
+    "question": "Do you want Wagon Wheel Decorations on your Greenhouse? (Only on Gable ends)",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "Yes",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "singleselect",
+    "explanation": "I.146",
+    "item_oid": "I.146",
+    "group_oid": "IG.3",
+    "condition": null
+  },
+  {
+    "id": "8b302c03",
+    "question": "How many do you want to install?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {
+      "option_a": "1",
+      "option_b": "2"
+    },
+    "answer": "1",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "singleselect",
+    "explanation": "I.147",
+    "item_oid": "I.147",
+    "group_oid": "IG.3",
+    "condition": {
+      "parent_item_oid": "I.146",
+      "parent_value": "1",
+      "hide_when_match": true
+    }
+  },
+  {
+    "id": "f0e7cec7",
+    "question": "Do you want Engineered Prints?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "boolean",
+    "explanation": "I.148",
+    "item_oid": "I.148",
+    "group_oid": "IG.3",
+    "condition": null
+  },
+  {
+    "id": "e6c627e5",
+    "question": "Do you require Stamped Engineered Prints?",
+    "option_a": "",
+    "option_b": "",
+    "option_c": "",
+    "option_d": "",
+    "option_values": {},
+    "answer": "",
+    "difficulty": "",
+    "topic": "Decoratives",
+    "tags": "boolean",
+    "explanation": "I.199",
+    "item_oid": "I.199",
+    "group_oid": "IG.3",
+    "condition": {
+      "parent_item_oid": "I.148",
+      "parent_value": "Yes",
+      "hide_when_match": true
+    }
+  }
+]
