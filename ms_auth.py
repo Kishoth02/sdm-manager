@@ -23,6 +23,7 @@ def get_auth_url():
     return get_msal_app().get_authorization_request_url(
         SCOPE,
         redirect_uri=REDIRECT_URI,
+        prompt="login",  # ← ADD THIS LINE
     )
 
 def get_token_from_code(code):
