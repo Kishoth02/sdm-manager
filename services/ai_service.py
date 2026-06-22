@@ -2,10 +2,15 @@ import json5
 import json
 import re
 import os
-from groq import Groq
+from azure.ai.inference import ChatCompletionsClient
+from azure.ai.inference.models import SystemMessage, UserMessage
+from azure.core.credentials import AzureKeyCredential
 
-client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
-MODEL_NAME = "llama-3.3-70b-versatile"
+client = ChatCompletionsClient(
+    endpoint=os.environ.get("AZURE_AI_ENDPOINT"),
+    credential=AzureKeyCredential(os.environ.get("AZURE_AI_KEY"))
+)
+MODEL_NAME = "Phi-4-mini-instruct"  # match the deployment name you used in AI Foundry
 
 def _resolve_group_by_index(group_str: str, available_groups: list) -> str:
     if not group_str or not available_groups:
@@ -97,13 +102,13 @@ def get_intent(message: str, available_groups: list = None) -> dict:
         return {"type": "convert", "target": "file"}
     # ─────────────────────────────────────────────────────────────────────
 
-    # ── GROQ API CALL ─────────────────────────────────────────────────────
+    # ── AZURE AI FOUNDRY (PHI-3) API CALL ─────────────────────────────────
     try:
-        response = client.chat.completions.create(
+        response = client.complete(
             model=MODEL_NAME,
             messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": message},
+                SystemMessage(content=SYSTEM_PROMPT),
+                UserMessage(content=message),
             ],
             temperature=0.1,
             max_tokens=500,
@@ -111,8 +116,8 @@ def get_intent(message: str, available_groups: list = None) -> dict:
         raw = response.choices[0].message.content.strip()
         print(f"DEBUG RAW OUTPUT: {raw}")
     except Exception as e:
-        print(f"Groq API error: {e}")
-        return {"type": "unknown", "message": f"Groq error: {str(e)}"}
+        print(f"Phi-3 API error: {e}")
+        return {"type": "unknown", "message": f"Phi-3 error: {str(e)}"}
     # ─────────────────────────────────────────────────────────────────────
 
     try:
