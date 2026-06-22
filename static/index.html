@@ -1974,7 +1974,26 @@
     }
 
     function showAuthErr(msg) { const el = document.getElementById('auth-err'); el.textContent = msg; el.style.display = 'block'; }
-    function doLogout() { if (!confirm('Logout?')) return; window.location.href = '/logout'; }
+    function doLogout() {
+      if (!confirm('Logout?')) return;
+
+      // Step 1 — Clear all local storage
+      localStorage.removeItem('mcq_user');
+      localStorage.removeItem('mcq_chats');
+      localStorage.removeItem('activeWorkingFile');
+      localStorage.removeItem('last_active_chat');
+      localStorage.removeItem('mcq_users');
+      sessionStorage.clear();
+
+      // Step 2 — Clear all cookies
+      document.cookie.split(";").forEach(function (c) {
+        document.cookie = c.replace(/^ +/, "")
+          .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+      });
+
+      // Step 3 — Redirect to backend logout
+      window.location.href = '/logout';
+    }
 
     async function loadActiveFileChip() {
       try {
