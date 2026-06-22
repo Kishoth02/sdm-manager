@@ -1,7 +1,5 @@
 # Python to Linux Web App on Azure
 # Build your Python project and deploy it to Azure as a Linux Web App.
-# Change python version to one thats appropriate for your application.
-# https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
 - master
@@ -11,7 +9,7 @@ variables:
   azureServiceConnectionId: 'b5d2fa17-62fb-4115-87da-30bc8ac815b1'
 
   # Web app name
-  webAppName: 'kishoth-sdm-manager'
+  webAppName: 'sdm-manager-app'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -19,7 +17,7 @@ variables:
   # Environment name
   environmentName: 'sdm-manager'
 
-  # Project root folder. Point to the folder containing manage.py file.
+  # Project root folder
   projectRoot: $(System.DefaultWorkingDirectory)
 
   pythonVersion: '3.11'
@@ -41,7 +39,6 @@ stages:
         python -m venv antenv
         source antenv/bin/activate
         python -m pip install --upgrade pip
-        pip install setup
         pip install -r requirements.txt
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
@@ -84,3 +81,4 @@ stages:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+              startUpCommand: 'uvicorn main:app --host 0.0.0.0 --port 8000'
