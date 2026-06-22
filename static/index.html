@@ -1988,7 +1988,7 @@
       // Step 2 — Clear all cookies
       document.cookie.split(";").forEach(function (c) {
         document.cookie = c.replace(/^ +/, "")
-          .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+          .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";pathH=/");
       });
 
       // Step 3 — Redirect to backend logout
@@ -2150,11 +2150,10 @@
         _panelConvertedSDM = data.sdm;
         _panelConvertedFilename = data.filename;
 
-        // ── Save to history ──────────────────────────────────────
-        const histRes = await fetch(`${BACKEND}/api/convert/history?username=guest`);
-        const histData = histRes.ok ? await histRes.json() : { history: [] };
-        const history = histData.history || [];
-        history.unshift({
+        // ── Save to localStorage history ─────────────────────────
+        const histKey = `convert_history_${currentUser.username}`;
+        const existing = JSON.parse(localStorage.getItem(histKey) || '[]');
+        existing.unshift({
           filename: data.filename,
           originalName: _panelCsvFile.name,
           groups: data.groups,
@@ -2162,12 +2161,8 @@
           convertedAt: new Date().toISOString(),
           sdm: data.sdm
         });
-        if (history.length > 20) history.splice(20);
-        await fetch(`${BACKEND}/api/convert/history`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ username: 'guest', history })
-        });
+        if (existing.length > 20) existing.splice(20);
+        localStorage.setItem(histKey, JSON.stringify(existing));
         renderConvertHistory();
         // ─────────────────────────────────────────────────────────
 
@@ -2186,9 +2181,8 @@
     async function renderConvertHistory() {
       const list = document.getElementById('convert-history-list');
       if (!list) return;
-      const res = await fetch(`${BACKEND}/api/convert/history?username=guest`);
-      const data = res.ok ? await res.json() : { history: [] };
-      const history = data.history || [];
+      const histKey = `convert_history_${currentUser?.username || 'guest'}`;
+      const history = JSON.parse(localStorage.getItem(histKey) || '[]');
       if (!history.length) {
         list.innerHTML = '<div style="color:var(--text3);font-size:11px;padding:4px">No conversions yet.</div>';
         return;
@@ -2221,9 +2215,9 @@
     }
 
     async function reDownloadSDM(index) {
-      const res = await fetch(`${BACKEND}/api/convert/history?username=guest`);
-      const data = res.ok ? await res.json() : { history: [] };
-      const item = (data.history || [])[index];
+      const histKey = `convert_history_${currentUser?.username || 'guest'}`;
+      const history = JSON.parse(localStorage.getItem(histKey) || '[]');
+      const item = history[index];
       if (!item) return;
       const blob = new Blob([JSON.stringify(item.sdm, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
@@ -2233,9 +2227,9 @@
     }
 
     async function reStartConversation(index) {
-      const res = await fetch(`${BACKEND}/api/convert/history?username=guest`);
-      const data = res.ok ? await res.json() : { history: [] };
-      const item = (data.history || [])[index];
+      const histKey = `convert_history_${currentUser?.username || 'guest'}`;
+      const history = JSON.parse(localStorage.getItem(histKey) || '[]');
+      const item = history[index];
       if (!item) return;
       try {
         const blob = new Blob([JSON.stringify(item.sdm)], { type: 'application/json' });
@@ -2265,15 +2259,10 @@
     }
 
     async function deleteConvertHistory(index) {
-      const res = await fetch(`${BACKEND}/api/convert/history?username=guest`);
-      const data = res.ok ? await res.json() : { history: [] };
-      const history = data.history || [];
+      const histKey = `convert_history_${currentUser?.username || 'guest'}`;
+      const history = JSON.parse(localStorage.getItem(histKey) || '[]');
       history.splice(index, 1);
-      await fetch(`${BACKEND}/api/convert/history`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username: 'guest', history })
-      });
+      localStorage.setItem(histKey, JSON.stringify(history));
       renderConvertHistory();
     }
 
