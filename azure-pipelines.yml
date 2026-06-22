@@ -1,25 +1,12 @@
-# Python to Linux Web App on Azure
-# Build your Python project and deploy it to Azure as a Linux Web App.
-
 trigger:
 - master
 
 variables:
-  # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: 'b5d2fa17-62fb-4115-87da-30bc8ac815b1'
-
-  # Web app name
+  azureServiceConnectionId: 'sdm-manager-connection'
   webAppName: 'sdm-manager-app'
-
-  # Agent VM image name
   vmImageName: 'ubuntu-latest'
-
-  # Environment name
   environmentName: 'sdm-manager'
-
-  # Project root folder
   projectRoot: $(System.DefaultWorkingDirectory)
-
   pythonVersion: '3.11'
 
 stages:
@@ -69,7 +56,6 @@ stages:
       runOnce:
         deploy:
           steps:
-
           - task: UsePythonVersion@0
             inputs:
               versionSpec: '$(pythonVersion)'
